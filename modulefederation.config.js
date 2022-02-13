@@ -1,6 +1,6 @@
 const deps = require("./package.json").dependencies;
 module.exports = {
-  name: 'authOrgManager',
+  name: 'thewebuiguy',
   filename: 'remoteEntry.js',
   exposes: {
     './Input': './src/components/inputs/Input.tsx',
