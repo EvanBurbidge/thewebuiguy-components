@@ -11,7 +11,8 @@ interface InputProps {
   errorText?: string;
   placeholder?: string;
   onChange(e: any): any;
-  innerClassNames?: string
+  innerClassNames?: string,
+  defaultValue?: string;
 }
 
 export const Input = ({
@@ -24,6 +25,7 @@ export const Input = ({
   errorText,
   placeholder,
   innerClassNames,
+  defaultValue,
 }: InputProps) => {
 
   const inputClassNames = useMemo(() => {
@@ -48,6 +50,7 @@ export const Input = ({
           placeholder={placeholder}
           className={inputClassNames}
           onChange={onChange}
+          defaultValue={defaultValue}
         />
       </div>
       {helpText && !errorText && (
