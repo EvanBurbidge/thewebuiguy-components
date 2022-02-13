@@ -1,0 +1,1 @@
+export const handleFieldChange = (name: string, setValue: any) => ({ target: { value } }: any) => setValue(name, value)
