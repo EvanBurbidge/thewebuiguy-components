@@ -1,7 +1,8 @@
 import React from 'react';
 import { ComponentStory, ComponentMeta } from '@storybook/react';
 
-import { Input } from '../../components/inputs/Input';
+import Input from '@components/inputs/Input';
+import InputGroup from '@components/inputs/InputGroup';
 
 // More on default export: https://storybook.js.org/docs/react/writing-stories/introduction#default-export
 export default {
@@ -18,10 +19,7 @@ export const TextInput = Template.bind({});
 // More on args: https://storybook.js.org/docs/react/writing-stories/args
 TextInput.args = {
   id: "input",
-  name: "input",
-  label: "Some input",
-  helpText: "",
-  errorText: "",
+  type: "text",
   placeholder: "",
   onChange: () => { },
   defaultValue: "some value",
