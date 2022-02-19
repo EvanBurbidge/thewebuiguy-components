@@ -28,11 +28,11 @@ module.exports = {
   shared: {
     ...deps,
     react: {
-      singleton: true,
+      singleton: false,
       requiredVersion: deps["react"],
     },
     "react-dom": {
-      singleton: true,
+      singleton: false,
       requiredVersion: deps["react-dom"],
     },
   },
