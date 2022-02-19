@@ -47,6 +47,9 @@
       }
     ]
   },
+  "files": [
+    "./src"
+  ],
   "browserslist": {
     "production": [
       ">0.2%",
