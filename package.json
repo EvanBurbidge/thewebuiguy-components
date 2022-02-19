@@ -48,7 +48,7 @@
     ]
   },
   "files": [
-    "./src"
+    "/src"
   ],
   "browserslist": {
     "production": [
