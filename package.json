@@ -1,7 +1,7 @@
 {
   "name": "@thewebuiguy/components",
   "version": "1.0.0",
-  "private": true,
+  "private": false,
   "dependencies": {
     "@craco/craco": "^6.4.3",
     "@heroicons/react": "^1.0.5",
