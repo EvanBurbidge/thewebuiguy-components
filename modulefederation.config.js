@@ -25,15 +25,15 @@ module.exports = {
     './PageTitle': './src/components/titles/PageTitle.tsx',
     './SectionTitle': './src/components/titles/SectionTitle.tsx',
   },
-  shared: {
-    ...deps,
-    react: {
-      singleton: true,
-      requiredVersion: deps["react"],
-    },
-    "react-dom": {
-      singleton: true,
-      requiredVersion: deps["react-dom"],
-    },
-  },
+  // shared: {
+  //   ...deps,
+  //   react: {
+  //     singleton: true,
+  //     requiredVersion: deps["react"],
+  //   },
+  //   "react-dom": {
+  //     singleton: true,
+  //     requiredVersion: deps["react-dom"],
+  //   },
+  // },
 };
