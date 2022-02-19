@@ -1,4 +1,5 @@
 const deps = require("./package.json").dependencies;
+
 module.exports = {
   name: 'thewebuiguy',
   filename: 'remoteEntry.js',
@@ -28,11 +29,11 @@ module.exports = {
   shared: {
     ...deps,
     react: {
-      singleton: false,
+      singleton: true,
       requiredVersion: deps["react"],
     },
     "react-dom": {
-      singleton: false,
+      singleton: true,
       requiredVersion: deps["react-dom"],
     },
   },
