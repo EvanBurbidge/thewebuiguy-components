@@ -17,3 +17,7 @@ export * from './Pagination'
 
 export * from './Pill'
 
+export * from './Checkbox'
+
+export * from './Radio'
+

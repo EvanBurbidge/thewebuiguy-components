@@ -14,10 +14,10 @@ const setup = (props = defaultProps) => render(<Pagination {...props} />);
 describe('Pagination', () => {
   it('renders', () => {
     setup();
-    expect(screen.getByText('1'));
-    expect(screen.getByText('2'));
-    expect(screen.getByText('3'));
-    expect(screen.getByText('4'));
-    expect(screen.getByText('5'));
+    screen.getByText('1');
+    screen.getByText('2');
+    screen.getByText('3');
+    screen.getByText('4');
+    screen.getByText('5');
   });
 });
