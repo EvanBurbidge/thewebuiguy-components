@@ -30,6 +30,7 @@
     "build-storybook": "build-storybook -s public",
     "build:tailwind": "postcss src/index.css -o .storybook/tailwind.css",
     "hygen": "hygen",
+    "prepublishOnly": "npm run build",
     "component:new": "hygen component with-prompt"
   },
   "moduleDirectories": [
