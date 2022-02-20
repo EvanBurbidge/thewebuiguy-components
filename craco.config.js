@@ -26,5 +26,8 @@ module.exports = {
     plugins: {
       remove: ["ModuleScopePlugin"],
     },
+    configure: (webpackConfig, { env, paths }) => {
+
+    }
   },
 };
