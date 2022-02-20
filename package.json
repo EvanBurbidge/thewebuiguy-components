@@ -25,7 +25,9 @@
     "test": "jest --config ./jest.config.js",
     "storybook": "start-storybook -p 6006 -s public",
     "build-storybook": "build-storybook -s public",
-    "build:tailwind": "postcss src/index.css -o .storybook/tailwind.css"
+    "build:tailwind": "postcss src/index.css -o .storybook/tailwind.css",
+    "hygen": "hygen",
+    "component:new": "hygen component with-prompt"
   },
   "moduleDirectories": [
     "node_modules",
@@ -91,6 +93,7 @@
     "classnames": "^2.3.1",
     "craco-alias": "^3.0.1",
     "craco-module-federation": "^1.1.0",
+    "hygen": "^6.1.0",
     "i18next": "^21.6.11",
     "postcss": "^8.4.6",
     "postcss-loader": "^6.2.1",
