@@ -8,7 +8,7 @@ interface AlertProps {
   children?: any
 }
 
-const Alert = (
+export const Alert = (
   {
     title = '',
     subtitle = '',

@@ -15,9 +15,12 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "noEmit": true,
-    "jsx": "react-jsx"
+    "jsx": "preserve",
+    "outDir": "./dist",
+    "rootDir": "./src"
   },
-  "include": ["src"],
+  "include": ["src/components/**/*"],
+  "exclude": ["node_modules", "**/*.stories.tsx", "**/__tests__"],
   "settings": {
     "import/resolver": {
       "typescript": {}
