@@ -1,5 +1,4 @@
 import React from 'react';
-import './alert.scss';
 
 export interface AlertProps {
   title: string;
