@@ -1,6 +1,6 @@
 import React from 'react';
 
-interface AlertProps {
+export interface AlertProps {
   title: string;
   subtitle: string;
   color: string;

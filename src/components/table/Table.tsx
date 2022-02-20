@@ -1,6 +1,7 @@
 import React from 'react';
 
 import Pagination, { PaginationProps } from '@components/pagination/Pagination';
+import TableLoader from './TableLoader';
 
 interface TableProps {
   hasPagination?: boolean;
@@ -8,6 +9,11 @@ interface TableProps {
   tableBody: any;
   tableHeader: React.ReactElement;
   loading?: boolean;
+  columns?: string[];
+  totalItems?: number;
+  currentPage?: number;
+  itemsPerPage?: number;
+  onPageChange?: (t: number) => any;
 }
 
 const Table = ({
@@ -16,10 +22,11 @@ const Table = ({
   tableBody,
   tableHeader,
   loading,
+  columns = [],
   ...rest
-}: TableProps ) => (
-  <div className="flex flex-col bg-white w-full rounded-sm">
-    <div className="shadow overflow-hidden border-b border-gray-100 ">
+}: TableProps) => loading ? <TableLoader columns={columns} /> : (
+  <div className="flex flex-col w-full bg-white rounded-sm">
+    <div className="overflow-hidden border-b border-gray-100 shadow ">
       <table className="min-w-full divide-y divide-gray-200">
         <thead className={"bg-gray-50"}>
           {tableHeader}
@@ -28,7 +35,7 @@ const Table = ({
           {tableBody}
         </tbody>
       </table>
-      {hasPagination && <Pagination {...rest as PaginationProps } />}
+      {hasPagination && <Pagination {...rest as PaginationProps} />}
     </div>
   </div>
 );

@@ -17,6 +17,6 @@ export const PaginationExample = Template.bind({});
 PaginationExample.args = {
   totalItems: 50,
   itemsPerPage: 10,
-  currentPage : 1,
+  currentPage: 1,
   onPageChange: page => console.log(page)
 }

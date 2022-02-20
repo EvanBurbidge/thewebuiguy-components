@@ -1,6 +1,5 @@
 const TsconfigPathsPlugin = require('tsconfig-paths-webpack-plugin');
 
-console.log('building sb?');
 
 module.exports = {
   "stories": [
@@ -8,10 +7,12 @@ module.exports = {
     "../src/**/*.stories.@(js|jsx|ts|tsx)"
   ],
   "addons": [
+
     "@storybook/addon-links",
     "@storybook/addon-essentials",
     "@storybook/addon-interactions",
-    "@storybook/preset-create-react-app"
+    "@storybook/preset-create-react-app",
+    // 'storybook-css-modules-preset',
   ],
   "framework": "@storybook/react",
   "core": {
