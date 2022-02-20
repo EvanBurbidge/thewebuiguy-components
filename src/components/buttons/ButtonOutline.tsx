@@ -1,7 +1,7 @@
 /* This example requires Tailwind CSS v2.0+ */
 import { useMemo, useCallback } from 'react';
 
-interface ButtonInterface {
+export interface ButtonInterface {
   id: string;
   onClick: any;
   type?: string;
@@ -9,6 +9,8 @@ interface ButtonInterface {
   disabled?: boolean,
   buttonType?: any
 }
+
+
 
 export default function ButtonOutline({
   id,
