@@ -7,6 +7,11 @@ import { Pill } from './Pill'
 export default {
   title: 'TheWebUiGuy/Pill',
   component: Pill,
+  argTypes: {
+    bgColor: {
+      control: { type: "select", options: ["primary", "secondary", "success", "error"], defaultValue: "primary" },
+    },
+  }
 } as ComponentMeta<typeof Pill>;
 
 const Template: ComponentStory<typeof Pill> = (args) => <Pill {...args} />;
@@ -15,6 +20,6 @@ export const Primary = Template.bind({});
 // More on args: https://storybook.js.org/docs/react/writing-stories/args
 Primary.args = {
   text: "string",
-  color: "red",
-  bgColor: "white"
+  color: "white",
+  bgColor: "primary"
 };
