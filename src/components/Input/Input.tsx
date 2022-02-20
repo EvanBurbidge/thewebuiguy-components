@@ -28,6 +28,7 @@ export const Input: React.FC<InputProps> = ({
       id={id}
       {...rest}
       type={type}
+      data-testid={id}
       onChange={onChange}
       disabled={disabled}
       placeholder={placeholder}

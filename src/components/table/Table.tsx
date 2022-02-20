@@ -1,6 +1,6 @@
 import React from 'react';
 
-import Pagination, { PaginationProps } from '@components/pagination-old/Pagination';
+import { Pagination, PaginationProps } from '@components/Pagination';
 import TableLoader from './TableLoader';
 
 interface TableProps {
