@@ -1,9 +1,6 @@
 import React from 'react';
-
 import { Pagination, PaginationProps } from '@components/Pagination';
-import TableLoader from './TableLoader';
-
-interface TableProps {
+export interface TableProps {
   hasPagination?: boolean;
   tableHeadClass?: string;
   tableBody: any;
@@ -16,7 +13,7 @@ interface TableProps {
   onPageChange?: (t: number) => any;
 }
 
-const Table = ({
+export const Table: React.FC<TableProps> = ({
   hasPagination = false,
   tableHeadClass = 'bg-white',
   tableBody,
@@ -24,20 +21,20 @@ const Table = ({
   loading,
   columns = [],
   ...rest
-}: TableProps) => loading ? <TableLoader columns={columns} /> : (
-  <div className="flex flex-col w-full bg-white rounded-sm">
-    <div className="overflow-hidden border-b border-gray-100 shadow ">
-      <table className="min-w-full divide-y divide-gray-200">
-        <thead className={"bg-gray-50"}>
-          {tableHeader}
-        </thead>
-        <tbody className="bg-white divide-y divide-gray-200">
-          {tableBody}
-        </tbody>
-      </table>
-      {hasPagination && <Pagination {...rest as PaginationProps} />}
+}: TableProps) => {
+  return (
+    <div className="flex flex-col w-full bg-white rounded-sm">
+      <div className="overflow-hidden border-b border-gray-100 shadow ">
+        <table className="min-w-full divide-y divide-gray-200">
+          <thead className={"bg-gray-50"}>
+            {tableHeader}
+          </thead>
+          <tbody className="bg-white divide-y divide-gray-200">
+            {tableBody}
+          </tbody>
+        </table>
+        {hasPagination && <Pagination {...rest as PaginationProps} />}
+      </div>
     </div>
-  </div>
-);
-
-export default Table;
+  );
+}

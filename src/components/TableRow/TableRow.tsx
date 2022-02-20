@@ -5,13 +5,11 @@ interface TableRowProps {
   children: React.ReactElement[]
 }
 
-const TableRow = ({
+export const TableRow: React.FC<TableRowProps> = ({
   id,
   children,
 }: TableRowProps) => (
-  <tr key={id} className="py-4 justify-center align-center items-center">
+  <tr key={id} className="items-center justify-center py-4 align-center">
     {children}
   </tr>
 );
-
-export default TableRow;

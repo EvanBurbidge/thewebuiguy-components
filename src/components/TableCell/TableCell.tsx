@@ -1,13 +1,13 @@
 import React, { Fragment } from 'react';
 
-interface TableCellProps {
+export interface TableCellProps {
   title?: string;
   subtitle?: string;
   alignment?: string;
   children?: any
 }
 
-const TableCell: React.FunctionComponent<TableCellProps> = ({
+export const TableCell: React.FC<TableCellProps> = ({
   title,
   subtitle,
   alignment = 'left',
@@ -25,7 +25,5 @@ const TableCell: React.FunctionComponent<TableCellProps> = ({
         </div>}
       </div>
     </td>
-  )
-};
-
-export default TableCell;
+  );
+}

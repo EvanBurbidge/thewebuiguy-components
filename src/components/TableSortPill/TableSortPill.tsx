@@ -1,12 +1,12 @@
 import React from 'react';
 import { Pill } from '@components/Pill';
 
-interface TableSortPillProps {
+export interface TableSortPillProps {
   sortingName: string;
   clearSorting(a: any): void
 }
 
-export const TableSortPill = ({
+export const TableSortPill: React.FunctionComponent<TableSortPillProps> = ({
   sortingName,
   clearSorting,
 }: TableSortPillProps) => (

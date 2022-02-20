@@ -16,22 +16,22 @@ const InputWithDropdown = ({
   onDropdownChange,
   optionsDefaultValue,
   classNames = '',
-}: any ) => {
+}: any) => {
   return (
     <div>
       <label htmlFor={id} className={labelClass}>
         {label}
       </label>
-      <div className="mb-3 relative shadow-sm">
-        <div className="absolute inset-y-0 left-0 pr-10 flex items-center">
+      <div className="relative mb-3 shadow-sm">
+        <div className="absolute inset-y-0 left-0 flex items-center pr-10">
           <select
             id="inputDropdown"
             name="inputDropdown"
             onChange={onDropdownChange}
             value={optionsDefaultValue}
-            className="focus:ring-highlight focus:border-highlight h-full py-0 pl-3 pr-7 rounded-r-none border-transparent bg-transparent border-r-gray-100 text-highlight sm:text-sm rounded-sm"
+            className="h-full py-0 pl-3 bg-transparent border-transparent rounded-sm rounded-r-none focus:ring-highlight focus:border-highlight pr-7 border-r-gray-100 text-highlight sm:text-sm"
           >
-            {options.map((opt:OptionProp ) => <option key={opt.value} value={opt.value}>{opt.label}</option>)}
+            {options.map((opt: OptionProp) => <option key={opt.value} value={opt.value}>{opt.label}</option>)}
           </select>
         </div>
         <input

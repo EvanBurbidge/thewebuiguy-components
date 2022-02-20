@@ -1,14 +1,14 @@
 import React from 'react';
-import TableRow from './TableRow';
-import TableCell from './TableCell';
+import { TableRow } from '@components/TableRow';
+import { TableCell } from '@components/TableCell';
 // @ts-ignore
-import Styles from './TableLoader.module.css';
+import Styles from './TableLoader.module.scss';
 
 interface TableLoaderProps {
   columns: string[]
 }
 
-const TableLoader = ({ columns }: TableLoaderProps) => (
+export const TableLoaderItem: React.FC<TableLoaderProps> = ({ columns }: TableLoaderProps) => (
   <TableRow id="loader-table-row">
     {columns && columns.map((c, idx) => (
       <TableCell key={`${c}-${idx}`}>
@@ -19,5 +19,3 @@ const TableLoader = ({ columns }: TableLoaderProps) => (
     ))}
   </TableRow>
 );
-
-export default TableLoader;

@@ -1,3 +1,4 @@
+const path = require('path');
 const TsconfigPathsPlugin = require('tsconfig-paths-webpack-plugin');
 
 
@@ -7,12 +8,11 @@ module.exports = {
     "../src/**/*.stories.@(js|jsx|ts|tsx)"
   ],
   "addons": [
-
     "@storybook/addon-links",
     "@storybook/addon-essentials",
     "@storybook/addon-interactions",
     "@storybook/preset-create-react-app",
-    // 'storybook-css-modules-preset',
+    '@storybook/preset-scss',
   ],
   "framework": "@storybook/react",
   "core": {
@@ -20,6 +20,12 @@ module.exports = {
   },
   webpackFinal: async (config) => {
     config.resolve.plugins = [new TsconfigPathsPlugin()];
+    // add SCSS support for CSS Modules
+    config.module.rules.push({
+      test: /\.scss$/,
+      use: ['style-loader', 'sass-loader', 'css-loader?modules&importLoaders',],
+      include: path.resolve(__dirname, '../'),
+    });
     return config;
   }
 }
