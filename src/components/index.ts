@@ -21,3 +21,9 @@ export * from './Checkbox'
 
 export * from './Radio'
 
+export * from './TextArea'
+
+export * from './Input'
+
+export * from './InputGroup'
+
