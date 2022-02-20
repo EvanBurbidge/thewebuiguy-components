@@ -1,17 +1,17 @@
 import React, { Fragment } from 'react';
 
-interface PageTitleProps {
+export interface PageTitleProps {
   title: string;
-  Dropdown: React.ReactElement;
-  Secondary: React.ReactElement;
-  Primary: React.ReactElement;
+  Dropdown?: React.ReactElement;
+  Secondary?: React.ReactElement;
+  Primary?: React.ReactElement;
 }
 
-const PageTitle = ({
+export const PageTitle: React.FC<PageTitleProps> = ({
   title = '',
   Dropdown = <Fragment />,
   Primary = <Fragment />,
-  Secondary = <Fragment />,
+  Secondary = <Fragment />
 }: PageTitleProps) => (
   <div className="flex items-center justify-between p-4 bg-white border-b border-gray-100 md:items-center">
     <div className="min-w-0">
@@ -29,4 +29,3 @@ const PageTitle = ({
   </div>
 );
 
-export default PageTitle;

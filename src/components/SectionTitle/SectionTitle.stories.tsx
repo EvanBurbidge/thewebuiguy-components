@@ -1,20 +1,18 @@
 import React from 'react';
 
 import { ComponentStory, ComponentMeta } from '@storybook/react';
-import { ExternalLink } from './ExternalLink'
+import { SectionTitle } from './SectionTitle'
 
 // More on default export: https://storybook.js.org/docs/react/writing-stories/introduction#default-export
 export default {
-  title: 'TheWebUiGuy/ExternalLink',
-  component: ExternalLink,
-} as ComponentMeta<typeof ExternalLink>;
+  title: 'TheWebUiGuy/SectionTitle',
+  component: SectionTitle,
+} as ComponentMeta<typeof SectionTitle>;
 
-const Template: ComponentStory<typeof ExternalLink> = (args) => <ExternalLink {...args}>Link</ExternalLink>;
+const Template: ComponentStory<typeof SectionTitle> = (args) => <SectionTitle {...args} />;
 
 export const Primary = Template.bind({});
 // More on args: https://storybook.js.org/docs/react/writing-stories/args
 Primary.args = {
-  id: "link",
-  href: "https://thewebuiguy.com"
+  title: "test title"
 };
-
