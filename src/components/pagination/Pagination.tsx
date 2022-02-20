@@ -1,9 +1,5 @@
-import React, { useState, useEffect} from 'react';
 import ReactPaginate from 'react-paginate';
-
-const containerClass = "flex justify-center h-auto align-center";
-const activeClass = 'cursor-pointer border-highlight text-highlight border-t-2 pt-4 px-4 inline-flex items-center text-sm font-medium';
-const inActiveClass = 'mb-4 cursor-pointer border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300 border-t-2 pt-4 px-4 inline-flex items-center text-sm font-medium';
+import React, { useMemo, useCallback } from 'react';
 
 export interface PaginationProps {
   totalItems: number;
@@ -12,21 +8,17 @@ export interface PaginationProps {
   onPageChange: (t: number) => any;
 }
 
-const getPageNumbers = (totalItems:number, itemsPerPage:number): number => Math.ceil((totalItems / itemsPerPage)) >> 0;
 
-const Pagination = ({
-  totalItems = 0,
-  currentPage = 1,
-  itemsPerPage = 10,
-  onPageChange = () => { },
-}: PaginationProps) => {
-  const [pageCount, setPageCount] = useState(1);
+const containerClass = "flex justify-center h-auto align-center";
+const activeClass = 'cursor-pointer border-highlight text-highlight border-t-2 pt-4 px-4 inline-flex items-center text-sm font-medium';
+const inActiveClass = 'mb-4 cursor-pointer border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300 border-t-2 pt-4 px-4 inline-flex items-center text-sm font-medium';
 
-  useEffect(() => {
-    setPageCount(getPageNumbers(totalItems, itemsPerPage));
-  }, [totalItems, itemsPerPage]);
+const getPageNumbers = (totalItems: number, itemsPerPage: number): number => Math.ceil((totalItems / itemsPerPage)) >> 0;
 
-  const handleOnPageChange = ({ selected = 0 }) => onPageChange(selected)
+export const Pagination: React.FC<PaginationProps> = ({ totalItems, itemsPerPage, currentPage, onPageChange }: PaginationProps) => {
+
+  const handleOnPageChange = useCallback(({ selected = 0 }) => onPageChange(selected), [onPageChange]);
+  const pageCount = useMemo(() => getPageNumbers(totalItems, itemsPerPage), [totalItems, itemsPerPage]);
   return (
     <ReactPaginate
       initialPage={currentPage}
@@ -41,7 +33,5 @@ const Pagination = ({
       marginPagesDisplayed={4}
       pageCount={pageCount}
     />
-  )
+  );
 }
-
-export default Pagination

@@ -11,3 +11,9 @@ export * from './SectionTitle'
 
 export * from './HomePageSectionTitle'
 
+export * from './Tabs'
+
+export * from './Pagination'
+
+export * from './Pill'
+
