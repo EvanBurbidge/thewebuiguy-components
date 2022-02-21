@@ -4,7 +4,7 @@ module.exports = {
   name: "thewebuiguy",
   exposes: {
     "./Button": "./src/components/Button",
-    "./ButtonOutline": "./src/components/ButtonOutline",
+    // "./ButtonOutline": "./src/components/ButtonOutline",
   },
   remotes: {
   },
