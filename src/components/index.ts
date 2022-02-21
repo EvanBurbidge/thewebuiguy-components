@@ -47,3 +47,7 @@ export * from './TableSortPill'
 
 export * from './TableSortIndicator'
 
+export * from './Stats'
+
+export * from './StatWithChange'
+
