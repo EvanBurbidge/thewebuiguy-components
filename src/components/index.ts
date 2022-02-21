@@ -37,10 +37,6 @@ export * from './Table'
 
 export * from './TableCell'
 
-
-export * from './TableCellHeaderSortIndicator'
-
-
 export * from './TableHeader'
 
 export * from './TableLoader'

@@ -3,17 +3,17 @@ import React from 'react';
 import SortDescendingIcon from '@heroicons/react/solid/SortDescendingIcon';
 import SortAscendingIcon from '@heroicons/react/solid/SortAscendingIcon';
 
-export interface TableHeaderSortIndicatorProps {
+export interface TableSortIndicatorProps {
   direction: string;
   property: string;
   handleDirectionChange(a: any, b: string): void
 }
 
-export const TableCHeaderSortIndicator: React.FC<TableHeaderSortIndicatorProps> = ({
+export const TableSortIndicator: React.FC<TableSortIndicatorProps> = ({
   direction,
   property,
   handleDirectionChange,
-}: TableHeaderSortIndicatorProps) => {
+}: TableSortIndicatorProps) => {
   const handleClick = () => {
     if (direction === 'ASC') {
       return handleDirectionChange(property, 'DESC');
@@ -22,10 +22,10 @@ export const TableCHeaderSortIndicator: React.FC<TableHeaderSortIndicatorProps> 
   }
   if (direction === 'ASC') {
     return (
-      <SortDescendingIcon onClick={handleClick} className="w-4 h-4 ml-1 text-xs text-gray-500" />
+      <SortDescendingIcon data-testid="descending" onClick={handleClick} className="w-4 h-4 ml-1 text-xs text-gray-500" />
     )
   }
   return (
-    <SortAscendingIcon onClick={handleClick} className="w-4 h-4 ml-1 text-xs text-gray-500" />
+    <SortAscendingIcon data-testid="ascending" onClick={handleClick} className="w-4 h-4 ml-1 text-xs text-gray-500" />
   )
 }

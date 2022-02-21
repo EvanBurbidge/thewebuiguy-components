@@ -1,5 +1,5 @@
 import React from 'react';
-import { labelClass } from './Classes';
+// import { labelClass } from './Classes';
 
 interface OptionProp {
   value: string;
@@ -19,7 +19,7 @@ const InputWithDropdown = ({
 }: any) => {
   return (
     <div>
-      <label htmlFor={id} className={labelClass}>
+      <label htmlFor={id} className="">
         {label}
       </label>
       <div className="relative mb-3 shadow-sm">

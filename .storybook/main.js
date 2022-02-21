@@ -11,8 +11,7 @@ module.exports = {
     "@storybook/addon-links",
     "@storybook/addon-essentials",
     "@storybook/addon-interactions",
-    "@storybook/preset-create-react-app",
-    '@storybook/preset-scss',
+    "@storybook/preset-create-react-app"
   ],
   "framework": "@storybook/react",
   "core": {
@@ -21,11 +20,12 @@ module.exports = {
   webpackFinal: async (config) => {
     config.resolve.plugins = [new TsconfigPathsPlugin()];
     // add SCSS support for CSS Modules
-    config.module.rules.push({
-      test: /\.scss$/,
-      use: ['style-loader', 'sass-loader', 'css-loader?modules&importLoaders',],
-      include: path.resolve(__dirname, '../'),
-    });
+    // config.module.rules.push({
+    //   test: /\.scss$/,
+    //   use: ['style-loader', 'css-loader', 'sass-loader',],
+    //   include: path.resolve(__dirname, '../'),
+    //   exclude: path.resolve(__dirname, '../node_modules'),
+    // });
     return config;
   }
 }
