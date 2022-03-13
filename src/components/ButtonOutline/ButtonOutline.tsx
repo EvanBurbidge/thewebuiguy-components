@@ -1,4 +1,4 @@
-import { useButtonHandlers } from '@hooks/useButtonHandlers';
+import { useButtonHandlers } from '../hooks/useButtonHandlers';
 import React from 'react';
 
 export interface ButtonOutlineProps {

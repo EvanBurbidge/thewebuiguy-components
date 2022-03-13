@@ -4,7 +4,6 @@ rm -rf ./lib
 mkdir lib
 
 cp -r ./src/components/ ./lib
-cp -r ./src/hooks ./lib
 cp -r ./src/utils ./lib
 cp -r ./src/constants ./lib
 
