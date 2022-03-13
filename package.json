@@ -56,7 +56,8 @@
     ]
   },
   "files": [
-    "dist"
+    "dist",
+    "lib"
   ],
   "browserslist": {
     "production": [
