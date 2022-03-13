@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Tabs } from '@components/Tabs';
+import { Tabs } from '../Tabs';
 import { ComponentStory, ComponentMeta } from '@storybook/react';
 
 // More on default export: https://storybook.js.org/docs/react/writing-stories/introduction#default-export

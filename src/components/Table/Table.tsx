@@ -1,5 +1,5 @@
 import React from 'react';
-import { Pagination, PaginationProps } from '@components/Pagination';
+import { Pagination, PaginationProps } from '../Pagination';
 export interface TableProps {
   hasPagination?: boolean;
   tableHeadClass?: string;

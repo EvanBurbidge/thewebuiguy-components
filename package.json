@@ -6,6 +6,7 @@
   "types": "dist/index.d.ts",
   "private": false,
   "dependencies": {
+    "@babel/core": "^7.17.5",
     "@craco/craco": "^6.4.3",
     "@headlessui/react": "^1.5.0",
     "@heroicons/react": "^1.0.5",
@@ -24,6 +25,7 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
+    "build:cjs": "tsc --module commonjs --outDir lib/cjs",
     "start": "start-storybook -p 6006 -s public",
     "build": "rollup -c",
     "build:mf": "craco build",
@@ -72,6 +74,7 @@
     ]
   },
   "devDependencies": {
+    "@babel/plugin-transform-typescript": "^7.16.8",
     "@craco/craco": "^6.4.3",
     "@heroicons/react": "^1.0.5",
     "@rollup/plugin-commonjs": "^16.0.0",

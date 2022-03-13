@@ -1,5 +1,5 @@
 import React from 'react';
-import { Pill } from '@components/Pill';
+import { Pill } from '../Pill';
 
 export interface TableSortPillProps {
   sortingName: string;

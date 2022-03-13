@@ -1,6 +1,6 @@
 import React from 'react';
-import { Button } from '@components/Button';
-import { FourOhFour } from '@components/FourOhFour';
+import { Button } from '../Button';
+import { FourOhFour } from '../FourOhFour';
 
 export interface NoDataProps {
   cta?: string,

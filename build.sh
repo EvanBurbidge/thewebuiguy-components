@@ -1,17 +1,28 @@
 
+rm -rf ./temp
 rm -rf ./lib
 
-mkdir lib
+mkdir temp
 
-cp -r ./src/components/ ./lib
-cp -r ./src/utils ./lib
-cp -r ./src/constants ./lib
+cp -r ./src/components/ ./temp
+cp -r ./src/utils ./temp
+cp -r ./src/constants ./temp
 
-cd ./lib;
+cd ./temp;
 for d in */; do
   cd $d
   echo "$d";
   rm -rf ./__tests__
   rm -rf *.stories.tsx
   cd ../
-done;
+done
+
+cd ../
+
+rm -rf ./lib
+
+tsc --project tsconfig.build.json
+
+rm -rf ./temp
+
+# "build:cjs": "tsc --module commonjs --outDir lib/cjs",

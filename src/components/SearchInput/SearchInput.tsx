@@ -1,5 +1,5 @@
 import React from 'react';
-import { InputProps, Input } from '@components/Input';
+import { InputProps, Input } from '../Input';
 
 
 

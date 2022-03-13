@@ -2,9 +2,9 @@ import React from 'react';
 
 import { ComponentStory, ComponentMeta } from '@storybook/react';
 import { Table } from './Table'
-import { TableRow } from '@components/TableRow';
-import { TableCell } from '@components/TableCell';
-import { TableHeader } from '@components/TableHeader';
+import { TableRow } from '../TableRow';
+import { TableCell } from '../TableCell';
+import { TableHeader } from '../TableHeader';
 // More on default export: https://storybook.js.org/docs/react/writing-stories/introduction#default-export
 export default {
   title: 'TheWebUiGuy/Table',

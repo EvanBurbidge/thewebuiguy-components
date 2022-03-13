@@ -1,6 +1,6 @@
 import React from 'react';
-import { TableRow } from '@components/TableRow';
-import { TableCell } from '@components/TableCell';
+import { TableRow } from '../TableRow';
+import { TableCell } from '../TableCell';
 
 interface TableLoaderProps {
   columns: string[]
