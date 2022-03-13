@@ -21,7 +21,8 @@ postgres-data/
 # misc
 .DS_Store
 *.pem
-
+lib/
+./lib
 
 # debug
 npm-debug.log*

@@ -25,7 +25,7 @@
   },
   "scripts": {
     "start": "start-storybook -p 6006 -s public",
-    "build": "rollup -c",
+    "build": "rm -rf lib && mkdir lib && cp -r ./src/ ./lib && rollup -c",
     "build:mf": "craco build",
     "test": "jest --config ./jest.config.js",
     "storybook": "start-storybook -p 6006 -s public",
@@ -37,7 +37,7 @@
   },
   "moduleDirectories": [
     "node_modules",
-    "src"
+    "lib"
   ],
   "eslintConfig": {
     "extends": [
