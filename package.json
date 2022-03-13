@@ -25,7 +25,7 @@
   },
   "scripts": {
     "start": "start-storybook -p 6006 -s public",
-    "build": "rm -rf lib && mkdir lib && cp -r ./src/ ./lib && rollup -c",
+    "build": "sh build.sh && rollup -c",
     "build:mf": "craco build",
     "test": "jest --config ./jest.config.js",
     "storybook": "start-storybook -p 6006 -s public",
