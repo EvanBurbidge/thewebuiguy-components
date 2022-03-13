@@ -12,14 +12,11 @@ const config = {
   external: [...Object.keys(pkg.dependencies || {}), ...Object.keys(pkg.peerDependencies || {})],
   output: [
     {
-      file: `./${pkg.module}`,
-      format: 'es',
-      sourcemap: true,
-    },
-    {
-      file: `./${pkg.main}`,
+      dir: `./lib`,
       format: 'cjs',
       sourcemap: true,
+      exports: "named",
+      preserveModules: true,
     },
   ],
   plugins: [
