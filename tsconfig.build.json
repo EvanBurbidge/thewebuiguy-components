@@ -16,7 +16,8 @@
     "noEmit": false,
     "jsx": "react",
     "outDir": "lib",
-    "rootDir": "temp/"
+    "rootDir": "temp/",
+    "declaration": true
   },
   "include": ["./temp/**/*"],
   "exclude": ["node_modules"]

@@ -27,7 +27,7 @@
   "scripts": {
     "build:cjs": "tsc --module commonjs --outDir lib/cjs",
     "start": "start-storybook -p 6006 -s public",
-    "build": "rollup -c",
+    "build": "sh build.sh",
     "build:mf": "craco build",
     "test": "jest --config ./jest.config.js",
     "storybook": "start-storybook -p 6006 -s public",
