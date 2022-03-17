@@ -7,6 +7,7 @@ mkdir temp
 cp -r ./src/components/ ./temp
 cp -r ./src/utils ./temp
 cp -r ./src/constants ./temp
+cp -r ./src/hooks ./temp
 
 cd ./temp;
 for d in */; do
@@ -24,5 +25,3 @@ rm -rf ./lib
 tsc --project tsconfig.build.json
 
 rm -rf ./temp
-
-# "build:cjs": "tsc --module commonjs --outDir lib/cjs",
