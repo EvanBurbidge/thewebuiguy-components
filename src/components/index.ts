@@ -55,3 +55,5 @@ export * from './Dropdown'
 
 export * from './Toggle'
 
+export * from './LinkedInput'
+
