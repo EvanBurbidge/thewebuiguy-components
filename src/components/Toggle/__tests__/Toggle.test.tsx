@@ -1,17 +1,15 @@
-// import React from 'react';
-// import { Toggle, ToggleProps } from '..';
-// import { render, screen } from '@testing-library/react';
+import React from 'react';
+import { Toggle } from '..';
+import { render } from '@testing-library/react';
 
-// const defaultProps: ToggleProps = {
-// };
+const defaultProps: any = {
+};
 
-// const setup = (props = defaultProps) => render(<Toggle {...props} />);
+const setup = (props = defaultProps) => render(<Toggle {...props} />);
 
-// describe('Toggle', () => {
-//   it('renders', () => {
-//     setup({children: 'foo'});
-//     expect(screen.getByText('foo'));
-//   });
-// });
-
-export const setup = () => console.log('toggleTest')
+describe('Toggle', () => {
+  xit('renders', () => {
+    setup();
+   
+  });
+});

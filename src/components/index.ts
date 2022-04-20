@@ -60,3 +60,5 @@ export * from './LinkedInput'
 
 export * from './DragDots'
 
+export * from './DraggableItem'
+

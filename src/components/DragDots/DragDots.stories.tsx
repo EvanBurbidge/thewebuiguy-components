@@ -9,7 +9,7 @@ export default {
   component: DragDots,
 } as ComponentMeta<typeof DragDots>;
 
-const Template: ComponentStory<typeof DragDots> = (args) => <DragDots {...args} />;
+const Template: ComponentStory<typeof DragDots> = (args) => <DragDots />;
 
 export const Primary = Template.bind({});
 // More on args: https://storybook.js.org/docs/react/writing-stories/args
