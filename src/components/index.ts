@@ -66,3 +66,5 @@ export * from './ActivityFeed'
 
 export * from './EmptyState'
 
+export * from './FileTree'
+
