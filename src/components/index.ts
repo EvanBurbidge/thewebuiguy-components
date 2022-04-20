@@ -62,3 +62,5 @@ export * from './DragDots'
 
 export * from './DraggableItem'
 
+export * from './ActivityFeed'
+

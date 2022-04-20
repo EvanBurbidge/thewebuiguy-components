@@ -17,6 +17,6 @@ const setup = (props = defaultProps) => render(<DraggableItem {...props} />);
 describe('DraggableItem', () => {
   it('renders', () => {
     setup();
-    expect(screen.getByText('Some description'));
+    screen.getByText('Some description');
   });
 });
