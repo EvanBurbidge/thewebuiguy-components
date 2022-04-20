@@ -11,9 +11,10 @@ export interface EmptyStateProps {
   subtitle: string;
   cta: string;
   ctaCallback: () => void;
+  Icon: any;
 }
 
-export const EmptyState: React.FC<EmptyStateProps> = ({ title, subtitle, cta, ctaCallback }:EmptyStateProps) => {
+export const EmptyState: React.FC<EmptyStateProps> = ({ title, subtitle, cta, ctaCallback, Icon = PlusIcon }:EmptyStateProps) => {
   return (
     <div className="text-center">
       <svg
@@ -38,7 +39,7 @@ export const EmptyState: React.FC<EmptyStateProps> = ({ title, subtitle, cta, ct
           id="empty-state-cta"
           onClick={ctaCallback}
         >
-          <PlusIcon className="w-5 h-5 mr-2 -ml-1" aria-hidden="true" />
+          <Icon className="w-5 h-5 mr-2 -ml-1" aria-hidden="true" />
           {cta}
         </ButtonOutline>
       </div>
