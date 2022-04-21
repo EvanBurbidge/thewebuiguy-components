@@ -26,7 +26,6 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "build:cjs": "tsc --module commonjs --outDir lib/cjs",
     "start": "start-storybook -p 6006 -s public",
     "build": "sh build.sh",
     "build:mf": "craco build",
@@ -59,8 +58,10 @@
     ]
   },
   "files": [
-    "dist",
-    "lib"
+    "lib",
+    "README.MD",
+    "package.json",
+    "package-lock.json"
   ],
   "browserslist": {
     "production": [
