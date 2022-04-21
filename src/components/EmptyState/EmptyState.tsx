@@ -14,7 +14,7 @@ export interface EmptyStateProps {
   Icon: any;
 }
 
-export const EmptyState: React.FC<EmptyStateProps> = ({ title, subtitle, cta, ctaCallback, Icon = PlusIcon }:EmptyStateProps) => {
+export const EmptyState: React.FC<EmptyStateProps> = ({ title, subtitle, cta, ctaCallback, Icon = PlusIcon }: EmptyStateProps) => {
   return (
     <div className="text-center">
       <svg

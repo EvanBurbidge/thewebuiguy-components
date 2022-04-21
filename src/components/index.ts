@@ -66,5 +66,11 @@ export * from './ActivityFeed'
 
 export * from './EmptyState'
 
-export * from './FileTree'
+export * from './Modal'
+
+export * from './ModalFooter'
+
+export * from './ModalTitle'
+
+export * from './ModalBody'
 
