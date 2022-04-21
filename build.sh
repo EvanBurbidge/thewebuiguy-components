@@ -25,3 +25,6 @@ rm -rf ./lib
 tsc --project tsconfig.build.json
 
 rm -rf ./temp
+
+cp ./package.json ./lib
+cp ./package-lock.json ./lib
