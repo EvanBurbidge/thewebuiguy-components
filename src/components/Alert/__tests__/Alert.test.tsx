@@ -4,7 +4,7 @@ import { render, screen } from '@testing-library/react';
 
 const defaultProps: AlertProps = {
   title: "testing",
-  subtitle: "testing",
+  subtitle: "test subtitle",
   handleDismiss: () => console.log('noop'),
   color: 'red',
 };
@@ -15,5 +15,6 @@ describe('Alert', () => {
   it('renders', async () => {
     setup();
     screen.getByText(/testing/g);
+    screen.getByText(/test subtitle/g);
   });
 });
