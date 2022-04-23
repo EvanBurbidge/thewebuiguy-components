@@ -11,7 +11,7 @@ export interface EmptyStateProps {
   subtitle: string;
   cta: string;
   ctaCallback: () => void;
-  Icon: any;
+  Icon?: any;
 }
 
 export const EmptyState: React.FC<EmptyStateProps> = ({ title, subtitle, cta, ctaCallback, Icon = PlusIcon }: EmptyStateProps) => {

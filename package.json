@@ -34,7 +34,8 @@
     "build:tailwind": "postcss src/index.css -o .storybook/tailwind.css",
     "hygen": "hygen",
     "prepublishOnly": "npm run build",
-    "component:new": "hygen component with-prompt"
+    "component:new": "hygen component with-prompt",
+    "test:generate-output": "jest --json --outputFile=.jest-test-results.json"
   },
   "moduleDirectories": [
     "node_modules",
@@ -84,6 +85,7 @@
     "@storybook/addon-actions": "^6.4.19",
     "@storybook/addon-essentials": "^6.4.19",
     "@storybook/addon-interactions": "^6.4.19",
+    "@storybook/addon-jest": "^6.4.22",
     "@storybook/addon-links": "^6.4.19",
     "@storybook/addon-postcss": "^2.0.0",
     "@storybook/builder-webpack5": "^6.4.19",

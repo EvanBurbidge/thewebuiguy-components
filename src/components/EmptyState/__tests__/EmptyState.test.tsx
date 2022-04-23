@@ -6,7 +6,7 @@ const defaultProps: EmptyStateProps = {
   title: "No Projects",
   subtitle: "Let's import some projects to get started",
   cta: "Import",
-  ctaCallback: () => {}
+  ctaCallback: () => { },
 };
 
 const setup = (props = defaultProps) => render(<EmptyState {...props} />);

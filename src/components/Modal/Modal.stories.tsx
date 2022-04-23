@@ -1,5 +1,6 @@
 import React from 'react';
-
+import { withTests } from '@storybook/addon-jest';
+import results from '../../../.jest-test-results.json';
 import { ComponentStory, ComponentMeta } from '@storybook/react';
 import { Modal } from './Modal'
 import { ModalTitle, ModalBody, ModalFooter } from '..';
@@ -13,6 +14,7 @@ const Body = () => <ModalBody Content="Some test text for the modal" />
 export default {
   title: 'TheWebUiGuy/Modal',
   component: Modal,
+  decorators: [withTests({ results })],
   argTypes: {
     buttonType: {
       control: { type: "select", options: ["primary", "secondary", "success", "error"], defaultValue: "primary" },
