@@ -1,9 +1,10 @@
 import React from 'react';
 import { withTests } from '@storybook/addon-jest';
-import results from '../../../.jest-test-results.json';
 import { ComponentStory, ComponentMeta } from '@storybook/react';
+
 import { Modal } from './Modal'
 import { ModalTitle, ModalBody, ModalFooter } from '..';
+import results from '../../../.jest-test-results.json';
 
 const bloop = () => console.log("bloop");
 
