@@ -88,3 +88,9 @@ export * from './BannerStickyHeader'
 
 export * from './BannerStickyHeader'
 
+export * from './InnerPageHeading'
+
+export * from './Breadcrumbs'
+
+export * from './HeadingMetaData'
+
