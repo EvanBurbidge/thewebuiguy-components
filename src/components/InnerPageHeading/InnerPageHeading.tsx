@@ -15,7 +15,7 @@ export interface InnerPageHeadingProps {
   breadcrumbs: Breadcrumb[];
   metaData: MetaDataItem[];
   title: string;
-  Actions: ReactElement;
+  Actions?: ReactElement;
 }
 
 export const InnerPageHeading: React.FC<InnerPageHeadingProps> = ({
