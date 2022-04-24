@@ -2,7 +2,16 @@ import React from 'react';
 import { CalendarIcon, CurrencyEuroIcon } from '@heroicons/react/solid'
 import { ComponentStory, ComponentMeta } from '@storybook/react';
 import { InnerPageHeading } from './InnerPageHeading'
+import { Button, ButtonOutline } from '..';
 
+
+
+const Actions = () => (
+  <div className="flex">
+    <ButtonOutline id="secondary" onClick={() => { }}>Secondary</ButtonOutline>
+    <Button id="secondary" onClick={() => { }} classNames="ml-3">Primary</Button>
+  </div>
+)
 // More on default export: https://storybook.js.org/docs/react/writing-stories/introduction#default-export
 export default {
   title: 'TheWebUiGuy/InnerPageHeading',
@@ -35,5 +44,6 @@ Primary.args = {
     { text: "20/12/2022", Icon: CalendarIcon },
     { text: "100 - 120k", Icon: CurrencyEuroIcon },
   ],
-  title: "Some page title"
+  title: "Some page title",
+  Actions: <Actions />
 };

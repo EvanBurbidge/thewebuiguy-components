@@ -28,7 +28,7 @@ export const InnerPageHeading: React.FC<InnerPageHeadingProps> = ({
     <div className="lg:flex lg:items-center lg:justify-between">
       <div className="flex-1 min-w-0">
         {breadcrumbs.length ? <Breadcrumbs breadcrumbs={breadcrumbs} /> : null}
-        <h2 className="mt-2 text-2xl font-bold leading-7 text-gray-900 sm:text-3xl sm:truncate">{title}</h2>
+        <h2 className="mt-2 text-2xl font-bold leading-7 text-primary sm:text-3xl sm:truncate">{title}</h2>
         <HeadingMetaData metaData={metaData} />
       </div>
       <div className="flex mt-5 lg:mt-0 lg:ml-4">
