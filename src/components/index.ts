@@ -74,3 +74,5 @@ export * from './ModalTitle'
 
 export * from './ModalBody'
 
+export * from './Panel'
+
