@@ -1,5 +1,5 @@
 import React from 'react';
-import { CalendarIcon } from '@heroicons/react/solid'
+import { CalendarIcon, CurrencyEuroIcon } from '@heroicons/react/solid'
 import { ComponentStory, ComponentMeta } from '@storybook/react';
 import { InnerPageHeading } from './InnerPageHeading'
 
@@ -32,7 +32,8 @@ Primary.args = {
     }
   ],
   metaData: [
-    { text: "Salary", Icon: <CalendarIcon className="w-4 h-4" /> }
+    { text: "20/12/2022", Icon: CalendarIcon },
+    { text: "100 - 120k", Icon: CurrencyEuroIcon },
   ],
   title: "Some page title"
 };
