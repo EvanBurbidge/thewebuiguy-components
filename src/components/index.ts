@@ -76,3 +76,11 @@ export * from './ModalBody'
 
 export * from './Panel'
 
+export * from './BannerFloatingFooter'
+
+export * from './Banner'
+
+export * from './BannerStickyFooter'
+
+export * from './BannerBody'
+
