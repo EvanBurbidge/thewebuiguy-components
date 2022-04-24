@@ -1,13 +1,15 @@
 import React, { useMemo } from 'react';
 
 import { BannerStickyFooter } from '../BannerStickyFooter';
+import { BannerStickyHeader } from '../BannerStickyHeader';
 import { BannerFloatingFooter } from '../BannerFloatingFooter';
-import { BannerWrapperProps } from '../../constants/BannerTypes';
+import { BannerWrapperProps } from './BannerTypes';
 
 
 const Banners: { [key: string]: any } = {
   floatingFooter: BannerFloatingFooter,
-  stickyFooter: BannerStickyFooter
+  stickyFooter: BannerStickyFooter,
+  stickyHeader: BannerStickyHeader
 }
 
 

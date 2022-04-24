@@ -1,8 +1,9 @@
 import React from 'react';
-import { Button } from '../Button';
-import { useType } from '../../hooks/useType';
-import { BannerProps } from '../../constants/BannerTypes';
+import { useType } from '../hooks/useType';
 import { XIcon } from '@heroicons/react/outline'
+
+import { Button } from '../Button';
+import { BannerProps } from '../Banner/BannerTypes';
 
 export const BannerBody: React.FC<BannerProps> = ({
   title,

@@ -1,6 +1,6 @@
 import React from 'react';
 import { BannerBody } from '../BannerBody';
-import { BannerProps } from '../../constants/BannerTypes';
+import { BannerProps } from '../Banner/BannerTypes';
 
 
 export const BannerFloatingFooter: React.FC<BannerProps> = ({

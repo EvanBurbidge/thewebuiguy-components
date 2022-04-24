@@ -8,7 +8,7 @@ export interface BannerProps {
   closeText: string;
   closeAction: () => void;
   ctaAction: () => void;
-  Icon: ReactElement;
+  Icon?: ReactElement;
   rounded?: boolean;
 }
 

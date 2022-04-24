@@ -1,16 +1,30 @@
 import React from 'react';
-import { Banner, BannerProps } from '..';
-import { render, screen } from '@testing-library/react';
+import { Banner } from '..';
+import { render, screen, fireEvent } from '@testing-library/react';
+import { BannerWrapperProps } from '../BannerTypes';
 
-const defaultProps: BannerProps = {
-  
+const fn = jest.fn()
+
+const defaultProps: BannerWrapperProps = {
+  type: "primary",
+  title: "We have some exciting news",
+  longTitle: "We now have floating banners",
+  closeText: "Dismiss",
+  cta: "Learn about it",
+  closeAction: fn,
+  ctaAction: fn,
+  bannerType: "stickyHeader",
 };
 
 const setup = (props = defaultProps) => render(<Banner {...props} />);
 
 describe('Banner', () => {
-  it('renders', () => {
-    setup({children: 'foo'});
-    expect(screen.getByText('foo'));
+  it('renders', async () => {
+    setup();
+    screen.getByText('We now have floating banners');
+    screen.getByText('Dismiss');
+    screen.getByText('Learn about it');
+    await fireEvent.click(screen.getByText('Learn about it'));
+    await fireEvent.click(screen.getByText('Dismiss'));
   });
 });
