@@ -13,10 +13,11 @@ export const BannerBody: React.FC<BannerProps> = ({
   closeText,
   Icon,
   cta,
+  rounded = true,
 }: BannerProps) => {
   const { background } = useType(type);
   return (
-    <div className={`p-2 ${background} rounded-lg shadow-lg sm:p-3`} >
+    <div className={`p-2 ${background} ${rounded ? 'rounded-lg' : ''} shadow-lg sm:p-3`} >
       <div className="flex flex-wrap items-center justify-between">
         <div className="flex items-center flex-1 w-0">
           {Icon && (

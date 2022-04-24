@@ -9,7 +9,7 @@ export const BannerFloatingFooter: React.FC<BannerProps> = ({
 }: BannerProps) => (
   <div className="fixed inset-x-0 bottom-0 pb-2 sm:pb-5">
     <div className="px-2 mx-auto max-w-7xl sm:px-6 lg:px-8">
-      <BannerBody type={type} {...rest} />
+      <BannerBody type={type} rounded={true} {...rest} />
     </div>
   </div >
 )

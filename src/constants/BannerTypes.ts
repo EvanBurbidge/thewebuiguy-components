@@ -9,6 +9,7 @@ export interface BannerProps {
   closeAction: () => void;
   ctaAction: () => void;
   Icon: ReactElement;
+  rounded?: boolean;
 }
 
 export interface BannerWrapperProps extends BannerProps {

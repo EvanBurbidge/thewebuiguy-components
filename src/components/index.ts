@@ -84,3 +84,5 @@ export * from './BannerStickyFooter'
 
 export * from './BannerBody'
 
+export * from './BannerStickyHeader'
+

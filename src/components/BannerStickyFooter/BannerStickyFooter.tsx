@@ -10,7 +10,7 @@ export const BannerStickyFooter: React.FC<BannerProps> = (props: BannerProps) =>
       your content from being obscured when the user scrolls to the bottom of the page.
     */}
       <div className="fixed inset-x-0 bottom-0">
-        <BannerBody {...props} />
+        <BannerBody {...props} rounded={false} />
       </div>
     </>
   );

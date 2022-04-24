@@ -25,4 +25,6 @@ Primary.args = {
   cta: "Learn about it",
   closeAction: () => { },
   ctaAction: () => { },
+  bannerType: "floatingFooter",
+  rounded: true
 };
