@@ -10,7 +10,10 @@ export default {
   argTypes: {
     bannerType: {
       control: { type: "radio", options: ["floatingFooter", "stickyFooter", "stickyHeader"] },
-    }
+    },
+    type: {
+      control: { type: "select", options: ["primary", "secondary", "success", "error"], defaultValue: "primary" },
+    },
   }
 } as ComponentMeta<typeof Banner>;
 
@@ -20,6 +23,7 @@ export const Primary = Template.bind({});
 // More on args: https://storybook.js.org/docs/react/writing-stories/args
 Primary.args = {
   type: "primary",
+  bannerType: "stickyHeader",
   title: "We have some exciting news",
   longTitle: "We now have floating banners",
   closeText: "Dismiss",
@@ -30,5 +34,5 @@ Primary.args = {
   ctaAction: () => {
     console.log("noooope")
   },
-  bannerType: "stickyHeader",
+
 };
