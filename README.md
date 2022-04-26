@@ -13,3 +13,8 @@ This is a set of tailwind components built using React, Tailwindcss and Typescri
 ## Component documentation
 
 https://thewebuiguy-components.vercel.app/
+
+
+## Github
+
+https://github.com/EvanBurbidge/thewebuiguy-components
