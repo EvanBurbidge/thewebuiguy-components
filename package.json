@@ -135,5 +135,9 @@
     "typescript": "^4.5.5",
     "web-vitals": "^2.1.4",
     "webpack": "^5.68.0"
+  },
+  "repository": {
+    "type":"git",
+    "url": "git+https://github.com/EvanBurbidge/thewebuiguy-components.git"
   }
 }
