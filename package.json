@@ -1,6 +1,6 @@
 {
   "name": "@thewebuiguy/components",
-  "version": "1.4.1",
+  "version": "1.5.0",
   "main": "dist/index.cjs.js",
   "module": "dist/index.esm.js",
   "types": "dist/index.d.ts",
@@ -137,7 +137,7 @@
     "webpack": "^5.68.0"
   },
   "repository": {
-    "type":"git",
+    "type": "git",
     "url": "git+https://github.com/EvanBurbidge/thewebuiguy-components.git"
   }
 }
