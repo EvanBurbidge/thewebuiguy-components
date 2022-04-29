@@ -46,13 +46,15 @@ export const Modal: React.FC<ModalProps> = ({
             leaveFrom="opacity-100 translate-y-0 sm:scale-100"
             leaveTo="opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95"
           >
-            <div>
+
+              <div className="relative inline-blockoverflow-hidden text-left align-bottom transition-all transform bg-white rounded-lg shadow-xl sm:my-8 sm:align-middle sm:max-w-lg sm:w-full sm:p-6">
               {ModalHeader}
-              <div className="relative inline-block px-4 pt-5 pb-4 overflow-hidden text-left align-bottom transition-all transform bg-white rounded-lg shadow-xl sm:my-8 sm:align-middle sm:max-w-lg sm:w-full sm:p-6">
+              <div className="px-4 pt-5 pb-4 ">
                 <div className="mt-3 sm:mt-5">
                   {ModalBody}
                 </div>
                 {ModalFooter}
+            
               </div>
             </div>
           </Transition.Child>
