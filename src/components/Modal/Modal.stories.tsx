@@ -5,8 +5,6 @@ import { Modal } from './Modal'
 import { ModalTitle, ModalBody, ModalFooter } from '..';
 
 const bloop = () => console.log("bloop");
-
-const Title = () => <ModalTitle title="Test title" />
 const Body = () => <ModalBody Content="Some test text for the modal" />
 
 // More on default export: https://storybook.js.org/docs/react/writing-stories/introduction#default-export
@@ -23,7 +21,7 @@ export default {
   }
 } as ComponentMeta<typeof Modal>;
 
-const Template: ComponentStory<typeof Modal> = (args: any) => <Modal ModalFooter={<ModalFooter confirmAction={bloop} cancelAction={bloop} cancelButtonText="cancel" confirmButtonText='confirm' buttonType={args.buttonType} />} ModalBody={<Body />} ModalHeader={<Title />} open={args.open} onClose={args.onClose} />;
+const Template: ComponentStory<typeof Modal> = (args: any) => <Modal ModalFooter={<ModalFooter confirmAction={bloop} cancelAction={bloop} cancelButtonText="cancel" confirmButtonText='confirm' buttonType={args.buttonType} />} ModalBody={<Body />} ModalHeader={<ModalTitle title="Test title" type={args.type}/>} open={args.open} onClose={args.onClose} />;
 
 export const Primary = Template.bind({});
 // More on args: https://storybook.js.org/docs/react/writing-stories/args
