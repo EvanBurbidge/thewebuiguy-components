@@ -1,13 +1,15 @@
 import { Dialog } from '@headlessui/react'
 import React, { Fragment, ReactElement } from 'react';
-
+import { useType } from '../hooks/useType'
 
 export interface ModalTitleProps {
   Icon?: ReactElement;
   title: string;
+  type: string;
 }
 
-export const ModalTitle: React.FC<ModalTitleProps> = ({ Icon, title }: ModalTitleProps) => {
+export const ModalTitle: React.FC<ModalTitleProps> = ({ Icon, title, type }: ModalTitleProps) => {
+  const { background, text } = useType(type)
   return (
     <div className="sm:flex sm:items-start">
       {Icon && (
