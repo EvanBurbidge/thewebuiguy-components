@@ -4,7 +4,7 @@ import { ModalTitle, ModalBody, ModalFooter } from '../..';
 import { render, screen, fireEvent } from '@testing-library/react';
 
 
-const Title = () => <ModalTitle title="Test title" />
+const Title = () => <ModalTitle title="Test title" type="primary"/>
 const Body = () => <ModalBody Content="Some test text for the modal" />
 
 const defaultProps: any = {
