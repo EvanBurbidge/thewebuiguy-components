@@ -11,7 +11,7 @@ export interface ModalTitleProps {
 export const ModalTitle: React.FC<ModalTitleProps> = ({ Icon, title, type }: ModalTitleProps) => {
   const { background, text } = useType(type)
   return (
-    <div className="sm:flex sm:items-start">
+    <div className={`sm:flex sm:items-start ${background} ${text}`}>
       {Icon && (
         <div className="flex items-center justify-center flex-shrink-0 w-12 h-12 mx-auto rounded-full sm:mr-4 sm:mx-0 sm:h-10 sm:w-10">
           {Icon}
