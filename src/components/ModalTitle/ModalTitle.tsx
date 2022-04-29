@@ -18,7 +18,7 @@ export const ModalTitle: React.FC<ModalTitleProps> = ({ Icon, title, type }: Mod
         </div>
       )}
       <div className="mt-3 text-left sm:mt-0 sm:text-left">
-        <Dialog.Title as="h3" className="text-lg font-medium leading-6 text-gray-900">
+        <Dialog.Title as="h3" className={`text-lg font-medium leading-6 ${text}`}>
           {title}
         </Dialog.Title>
       </div>
