@@ -11,6 +11,7 @@ const defaultProps: any = {
   open: true,
   onClose: () => { },
   buttonType: "primary",
+  type: "primary"
 };
 
 const fn = jest.fn();

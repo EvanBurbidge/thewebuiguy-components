@@ -16,7 +16,10 @@ export default {
   argTypes: {
     buttonType: {
       control: { type: "select", options: ["primary", "secondary", "success", "error"], defaultValue: "primary" },
-    }
+    },
+    type: {
+      control: { type: "select", options: ["primary", "secondary", "success", "error"], defaultValue: "primary" },
+    },
   }
 } as ComponentMeta<typeof Modal>;
 
@@ -28,5 +31,7 @@ Primary.args = {
   open: false,
   onClose: bloop,
   // @ts-ignore
-  buttonType: "primary"
+  buttonType: "primary",
+  // @ts-ignore
+  type: "primary"
 };
