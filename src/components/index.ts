@@ -94,3 +94,5 @@ export * from './Breadcrumbs'
 
 export * from './HeadingMetaData'
 
+export * from './Avatar'
+
