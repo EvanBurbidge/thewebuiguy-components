@@ -1,7 +1,7 @@
 import React from 'react';
 
-const labelClass = "font-medium text-primary capitalize";
-const subtitleClass = "mt-1 text-sm text-primaryHover";
+const defaultLabelClass = "font-medium text-primary capitalize";
+const defaultSubtitleClass = "mt-1 text-sm text-primaryHover";
 
 export interface InputGroupProps {
   id: string;
@@ -14,6 +14,8 @@ export interface InputGroupProps {
   placeholder?: string;
   hasError?: boolean;
   errorMessage?: string;
+  labelClass?: string;
+  subtitleClass?: string
 }
 
 export const InputGroup: React.FC<InputGroupProps> = ({
@@ -26,6 +28,8 @@ export const InputGroup: React.FC<InputGroupProps> = ({
   hasError = false,
   errorMessage = '',
   extraClasses = '',
+  labelClass = defaultLabelClass,
+  subtitleClass = defaultSubtitleClass
 }: InputGroupProps) => {
   const wrapperClassName = `sm:col-span-${colSpan} mb-4`;
   return (
