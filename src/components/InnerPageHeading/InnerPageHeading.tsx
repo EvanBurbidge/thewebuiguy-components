@@ -33,47 +33,6 @@ export const InnerPageHeading: React.FC<InnerPageHeadingProps> = ({
       </div>
       <div className="flex mt-5 lg:mt-0 lg:ml-4">
         {Actions}
-
-        {/* Dropdown */}
-        <Menu as="span" className="relative ml-3 sm:hidden">
-          <Menu.Button className="inline-flex items-center px-4 py-2 text-sm font-medium text-gray-700 bg-white border border-gray-300 rounded-md shadow-sm hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
-            More
-            <ChevronDownIcon className="w-5 h-5 ml-2 -mr-1 text-gray-500" aria-hidden="true" />
-          </Menu.Button>
-
-          <Transition
-            as={Fragment}
-            enter="transition ease-out duration-200"
-            enterFrom="transform opacity-0 scale-95"
-            enterTo="transform opacity-100 scale-100"
-            leave="transition ease-in duration-75"
-            leaveFrom="transform opacity-100 scale-100"
-            leaveTo="transform opacity-0 scale-95"
-          >
-            <Menu.Items className="absolute right-0 w-48 py-1 mt-2 -mr-1 origin-top-right bg-white rounded-md shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
-              <Menu.Item>
-                {({ active }) => (
-                  <a
-                    href="#"
-                    className={classNames(active ? 'bg-gray-100' : '', 'block px-4 py-2 text-sm text-gray-700')}
-                  >
-                    Edit
-                  </a>
-                )}
-              </Menu.Item>
-              <Menu.Item>
-                {({ active }) => (
-                  <a
-                    href="#"
-                    className={classNames(active ? 'bg-gray-100' : '', 'block px-4 py-2 text-sm text-gray-700')}
-                  >
-                    View
-                  </a>
-                )}
-              </Menu.Item>
-            </Menu.Items>
-          </Transition>
-        </Menu>
       </div>
     </div>
   )
