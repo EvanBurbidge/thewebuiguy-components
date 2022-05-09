@@ -35,6 +35,7 @@ export const Pagination: React.FC<PaginationProps> = ({ totalItems, itemsPerPage
       marginPagesDisplayed={4}
       disableInitialCallback={disableInitialCallback}
       pageCount={pageCount}
+      renderOnZeroPageCount={() => null}
     />
   );
 }
