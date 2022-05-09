@@ -5,6 +5,8 @@ export interface PaginationProps {
   totalItems: number;
   currentPage: number;
   itemsPerPage: number;
+  disableInitialCallback: boolean;
+  initialPage?: number;
   onPageChange: (t: number) => any;
 }
 
@@ -15,13 +17,13 @@ const inActiveClass = 'mb-4 cursor-pointer border-transparent text-gray-500 hove
 
 const getPageNumbers = (totalItems: number, itemsPerPage: number): number => Math.ceil((totalItems / itemsPerPage)) >> 0;
 
-export const Pagination: React.FC<PaginationProps> = ({ totalItems, itemsPerPage, currentPage, onPageChange }: PaginationProps) => {
+export const Pagination: React.FC<PaginationProps> = ({ totalItems, itemsPerPage, currentPage, onPageChange, disableInitialCallback = false, initialPage = 0 }: PaginationProps) => {
 
   const handleOnPageChange = useCallback(({ selected = 0 }) => onPageChange(selected), [onPageChange]);
   const pageCount = useMemo(() => getPageNumbers(totalItems, itemsPerPage), [totalItems, itemsPerPage]);
   return (
     <ReactPaginate
-      initialPage={currentPage}
+      initialPage={initialPage}
       pageClassName={inActiveClass}
       activeClassName={activeClass}
       nextClassName={inActiveClass}
@@ -31,6 +33,7 @@ export const Pagination: React.FC<PaginationProps> = ({ totalItems, itemsPerPage
       containerClassName={containerClass}
       pageRangeDisplayed={10}
       marginPagesDisplayed={4}
+      disableInitialCallback={disableInitialCallback}
       pageCount={pageCount}
     />
   );
