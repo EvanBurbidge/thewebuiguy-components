@@ -1,4 +1,4 @@
-import { useType } from '@components/hooks/useType';
+import { useType } from '../hooks/useType';
 import React from 'react';
 
 export interface AlertProps {
