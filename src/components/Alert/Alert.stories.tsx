@@ -7,6 +7,11 @@ import { Alert } from './Alert'
 export default {
   title: 'TheWebUiGuy/Alert',
   component: Alert,
+  argTypes: {
+    type: {
+      control: { type: "select", options: ["primary", "secondary", "success", "error", "warning"], defaultValue: "primary" },
+    },
+  }
 } as ComponentMeta<typeof Alert>;
 
 const Template: ComponentStory<typeof Alert> = (args) => <Alert {...args} />;
@@ -18,4 +23,5 @@ Primary.args = {
   subtitle: "This is a subtitle",
   children: () => <p>Testing </p>,
   handleDismiss: () => { },
+  type: "primary"
 };

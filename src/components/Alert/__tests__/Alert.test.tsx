@@ -6,7 +6,7 @@ const defaultProps: AlertProps = {
   title: "testing",
   subtitle: "test subtitle",
   handleDismiss: () => console.log('noop'),
-  color: 'red',
+  type: 'primary',
 };
 
 const setup = (props = defaultProps) => render(<Alert {...props} />);
