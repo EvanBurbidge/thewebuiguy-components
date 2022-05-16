@@ -96,3 +96,5 @@ export * from './HeadingMetaData'
 
 export * from './Avatar'
 
+export * from './OverlayLoader'
+
