@@ -98,3 +98,5 @@ export * from './Avatar'
 
 export * from './OverlayLoader'
 
+export * from './ConfirmModal'
+

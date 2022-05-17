@@ -23,6 +23,8 @@ export const useButtonHandlers = ({
         return 'border-success hover:border-successHover text-success'
       case 'secondary':
         return 'border-secondary hover:border-secondaryHover text-secondary'
+      case 'warning':
+        return 'border-warning hover:border-warningHover text-warning'
       default:
         return 'border-primary hover:border-primaryHover text-secondary'
     }
@@ -40,6 +42,8 @@ export const useButtonHandlers = ({
         return 'bg-success hover:bg-successHover text-white'
       case 'secondary':
         return 'bg-secondary hover:bg-secondaryHover text-white'
+      case 'warning':
+        return 'bg-warning hover:bg-warningHover text-white'
       default:
         return 'bg-primary hover:bg-primaryHover text-white'
     }
