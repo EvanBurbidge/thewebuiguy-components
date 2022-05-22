@@ -45,7 +45,7 @@ export const Panel: React.FC<PanelProps> = ({
           >
             <div className="flex flex-col w-1/2 h-screen px-4 pt-5 pb-4 overflow-hidden text-left align-bottom transition-all transform bg-white">
               {PanelHeader}
-              <div className="flex-1 w-full mt-3 divide-y sm:mt-5 divide-solid">
+              <div className="flex-1 w-full mt-3 overflow-auto divide-y sm:mt-5 divide-solid">
                 {PanelBody}
               </div>
               {PanelFooter}
