@@ -17,5 +17,6 @@ Primary.args = {
   title: "No Projects",
   subtitle: "Let's import some projects to get started",
   cta: "Import",
-  ctaCallback: () => {}
+  ctaCallback: () => { },
+  hideCta: false,
 };
