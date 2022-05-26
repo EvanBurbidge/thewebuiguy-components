@@ -11,10 +11,11 @@ export interface EmptyStateProps {
   subtitle: string;
   cta: string;
   ctaCallback: () => void;
+  hideCta?: boolean
   Icon?: any;
 }
 
-export const EmptyState: React.FC<EmptyStateProps> = ({ title, subtitle, cta, ctaCallback, Icon = PlusIcon }: EmptyStateProps) => {
+export const EmptyState: React.FC<EmptyStateProps> = ({ title, subtitle, cta, ctaCallback, Icon = PlusIcon, hideCta = false, }: EmptyStateProps) => {
   return (
     <div className="text-center">
       <svg
@@ -34,15 +35,19 @@ export const EmptyState: React.FC<EmptyStateProps> = ({ title, subtitle, cta, ct
       </svg>
       <h3 className="mt-2 text-sm font-medium text-gray-900">{title}</h3>
       <p className="mt-1 text-sm text-gray-500">{subtitle}</p>
-      <div className="mt-6">
-        <ButtonOutline
-          id="empty-state-cta"
-          onClick={ctaCallback}
-        >
-          <Icon className="w-5 h-5 mr-2 -ml-1" aria-hidden="true" />
-          {cta}
-        </ButtonOutline>
-      </div>
+      {
+        !hideCta && (
+          <div className="mt-6">
+            <ButtonOutline
+              id="empty-state-cta"
+              onClick={ctaCallback}
+            >
+              <Icon className="w-5 h-5 mr-2 -ml-1" aria-hidden="true" />
+              {cta}
+            </ButtonOutline>
+          </div>
+        )
+      }
     </div>
   );
 }
