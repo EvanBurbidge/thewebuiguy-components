@@ -1,6 +1,6 @@
 {
   "name": "@thewebuiguy/components",
-  "version": "1.7.2",
+  "version": "1.7.3",
   "types": "dist/index.d.ts",
   "private": false,
   "dependencies": {
