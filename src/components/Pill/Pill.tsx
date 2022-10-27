@@ -8,7 +8,7 @@ export interface PillProps {
 
 export const Pill: React.FC<PillProps> = ({ bgColor, color, text }: PillProps) => {
   return (
-    <span className={`bg-${bgColor} text-${color} text-center w-1/2 px-2 py-1 font-base text-sm rounded-2xl`}>
+    <span className={`bg-${bgColor} text-${color} text-center w-fit px-2 py-1 font-base text-sm rounded-2xl`}>
       {text}
     </span>
   );
