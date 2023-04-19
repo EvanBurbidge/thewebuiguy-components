@@ -5,6 +5,7 @@ export interface TableCellProps {
   subtitle?: string;
   alignment?: string;
   children?: any
+  classNames?: string;
 }
 
 export const TableCell: React.FC<TableCellProps> = ({
@@ -12,9 +13,10 @@ export const TableCell: React.FC<TableCellProps> = ({
   subtitle,
   alignment = 'left',
   children = <Fragment />,
+  classNames = '',
 }: TableCellProps) => {
   return (
-    <td className="px-6 py-4 whitespace-nowrap">
+    <td className={`${classNames} px-6 py-4`}>
       <div className={`flex flex-col items-${alignment} text-${alignment}`}>
         {children && children}
         {title && <div className="text-base font-medium text-primary">
