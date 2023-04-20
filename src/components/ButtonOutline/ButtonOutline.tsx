@@ -1,6 +1,5 @@
-import classNames from 'classnames';
-import { useButtonHandlers } from '../hooks/useButtonHandlers';
 import React from 'react';
+import classNames from 'classnames';
 
 export interface ButtonOutlineProps {
   id: string;

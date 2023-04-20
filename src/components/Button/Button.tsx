@@ -32,7 +32,6 @@ export const Button: React.FC<ButtonProps> = ({ id, onClick, type = 'primary', c
           'bg-secondary hover:bg-secondaryHover text-white': type === 'secondary',
           'bg-warning hover:bg-warningHover text-white': type === 'warning',
           'bg-primary hover:bg-primaryHover text-white': type === 'primary'
-
         }
       )}
     >
