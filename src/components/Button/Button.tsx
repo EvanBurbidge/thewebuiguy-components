@@ -1,5 +1,5 @@
-import { useButtonHandlers } from '../hooks/useButtonHandlers';
 import React from 'react';
+import classNames from 'classnames';
 
 export interface ButtonProps {
   id: string;
@@ -11,10 +11,12 @@ export interface ButtonProps {
   classNames?: string
 }
 
-export const Button: React.FC<ButtonProps> = ({ id, onClick, type, children, disabled, buttonType, classNames }: ButtonProps) => {
-  const { solidColors, handleClick } = useButtonHandlers({
-    type, disabled, onClick
-  });
+export const Button: React.FC<ButtonProps> = ({ id, onClick, type = 'primary', children, disabled, buttonType, classNames: extraClasses }: ButtonProps) => {
+  const handleClick = () => {
+    if (!disabled) {
+      onClick();
+    }
+  }
 
   return (
     <button
@@ -22,7 +24,17 @@ export const Button: React.FC<ButtonProps> = ({ id, onClick, type, children, dis
       data-testid={id}
       type={buttonType}
       onClick={handleClick}
-      className={`inline-flex items-center px-4 py-2 border border-transparent text-base font-medium rounded shadow-sm focus:outline-none ${solidColors} ${classNames}`}
+      className={classNames(
+        `inline-flex items-center px-4 py-2 border border-transparent text-base font-medium rounded shadow-sm focus:outline-none ${extraClasses}`,
+        {
+          'bg-error hover:bg-errorHover text-white': type === 'error',
+          'bg-success hover:bg-successHover text-white': type === 'success',
+          'bg-secondary hover:bg-secondaryHover text-white': type === 'secondary',
+          'bg-warning hover:bg-warningHover text-white': type === 'warning',
+          'bg-primary hover:bg-primaryHover text-white': type === 'primary'
+
+        }
+      )}
     >
       {children}
     </button >
