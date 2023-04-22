@@ -15,7 +15,6 @@ export const Modal: React.FC<ModalProps> = ({
   ModalHeader = <Fragment />,
   ModalBody = <Fragment />,
   ModalFooter = <Fragment />
-
 }: ModalProps) => {
   return (
     <Transition.Root show={open} as={Fragment}>
