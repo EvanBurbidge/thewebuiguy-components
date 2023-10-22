@@ -18,7 +18,7 @@
     "build": "sh build.sh",
     "build:mf": "craco build",
     "test": "jest --config ./jest.config.js",
-    "build-storybook": "storybook build -s public",
+    "build-storybook": "storybook build",
     "build:tailwind": "postcss src/index.css -o .storybook/tailwind.css",
     "hygen": "hygen",
     "prepublishOnly": "npm run build",
