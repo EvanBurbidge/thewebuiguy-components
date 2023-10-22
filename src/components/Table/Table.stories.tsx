@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { ComponentStory, ComponentMeta } from '@storybook/react';
+
 import { Table } from './Table'
 import { TableRow } from '../TableRow';
 import { TableCell } from '../TableCell';
@@ -9,9 +9,9 @@ import { TableHeader } from '../TableHeader';
 export default {
   title: 'TheWebUiGuy/Table',
   component: Table,
-} as ComponentMeta<typeof Table>;
+};
 
-const Template: ComponentStory<typeof Table> = (args) => <Table
+const Template: any = (args: any) => <Table
   tableHeader={
     <TableRow id="header">
       <TableHeader title="header-one" />

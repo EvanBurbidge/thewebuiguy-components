@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { ComponentStory, ComponentMeta } from '@storybook/react';
+
 import { Stats } from './Stats'
 
 const statsProp = [
@@ -13,9 +13,9 @@ const statsProp = [
 export default {
   title: 'TheWebUiGuy/Stats',
   component: Stats,
-} as ComponentMeta<typeof Stats>;
+};
 
-const Template: ComponentStory<typeof Stats> = (args) => <Stats {...args} />;
+const Template: any = (args: any) => <Stats {...args} />;
 
 export const Primary = Template.bind({});
 // More on args: https://storybook.js.org/docs/react/writing-stories/args

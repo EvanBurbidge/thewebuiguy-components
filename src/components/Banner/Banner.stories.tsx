@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { ComponentStory, ComponentMeta } from '@storybook/react';
+
 import { Banner } from './Banner'
 
 // More on default export: https://storybook.js.org/docs/react/writing-stories/introduction#default-export
@@ -15,9 +15,9 @@ export default {
       control: { type: "select", options: ["primary", "secondary", "success", "error"], defaultValue: "primary" },
     },
   }
-} as ComponentMeta<typeof Banner>;
+};
 
-const Template: ComponentStory<typeof Banner> = (args) => <Banner {...args} />;
+const Template: any = (args: any) => <Banner {...args} />;
 
 export const Primary = Template.bind({});
 // More on args: https://storybook.js.org/docs/react/writing-stories/args

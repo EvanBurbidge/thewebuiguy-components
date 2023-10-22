@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { ComponentStory, ComponentMeta } from '@storybook/react';
+
 import { Input } from '../Input';
 import { InputGroup } from './InputGroup'
 
@@ -8,9 +8,9 @@ import { InputGroup } from './InputGroup'
 export default {
   title: 'TheWebUiGuy/InputGroup',
   component: InputGroup,
-} as ComponentMeta<typeof InputGroup>;
+};
 
-const Template: ComponentStory<typeof InputGroup> = (args) => <InputGroup {...args} />;
+const Template: any = (args: any) => <InputGroup {...args} />;
 
 export const Primary = Template.bind({});
 // More on args: https://storybook.js.org/docs/react/writing-stories/args

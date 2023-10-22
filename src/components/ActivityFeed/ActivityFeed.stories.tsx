@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { ComponentStory, ComponentMeta } from '@storybook/react';
+
 import { ActivityFeed } from './ActivityFeed'
 /* This example requires Tailwind CSS v2.0+ */
 const people = [
@@ -22,9 +22,9 @@ const activities = [
 export default {
   title: 'TheWebUiGuy/ActivityFeed',
   component: ActivityFeed,
-} as ComponentMeta<typeof ActivityFeed>;
+};
 
-const Template: ComponentStory<typeof ActivityFeed> = (args) => <ActivityFeed {...args} />;
+const Template: any = (args: any) => <ActivityFeed {...args} />;
 
 export const Primary = Template.bind({});
 // More on args: https://storybook.js.org/docs/react/writing-stories/args

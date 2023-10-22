@@ -1,6 +1,6 @@
 import React from 'react';
 import { CalendarIcon, CurrencyEuroIcon } from '@heroicons/react/solid'
-import { ComponentStory, ComponentMeta } from '@storybook/react';
+
 import { InnerPageHeading } from './InnerPageHeading'
 import { Button, ButtonOutline } from '..';
 
@@ -16,9 +16,9 @@ const Actions = () => (
 export default {
   title: 'TheWebUiGuy/InnerPageHeading',
   component: InnerPageHeading,
-} as ComponentMeta<typeof InnerPageHeading>;
+};
 
-const Template: ComponentStory<typeof InnerPageHeading> = (args) => <InnerPageHeading {...args} />;
+const Template: any = (args: any) => <InnerPageHeading {...args} />;
 
 export const Primary = Template.bind({});
 // More on args: https://storybook.js.org/docs/react/writing-stories/args

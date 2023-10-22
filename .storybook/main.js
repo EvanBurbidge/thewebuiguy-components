@@ -6,6 +6,7 @@ module.exports = {
     "../src/**/*.stories.mdx",
     "../src/**/*.stories.@(js|jsx|ts|tsx)"
   ],
+
   "addons": [
     "@storybook/addon-essentials",
     "@storybook/addon-controls",
@@ -14,12 +15,15 @@ module.exports = {
     "@storybook/addon-actions",
     "@storybook/addon-docs"
   ],
-  "framework": "@storybook/react",
-  "core": {
-    "builder": "webpack5"
-  },
+
+  "framework": "@storybook/react-webpack5",
+
   webpackFinal: async (config) => {
     config.resolve.plugins = [new TsconfigPathsPlugin()];
     return config;
+  },
+
+  docs: {
+    autodocs: true
   }
 }

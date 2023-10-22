@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { ComponentStory, ComponentMeta } from '@storybook/react';
+
 import { DraggableItem, DraggableItemProps } from './DraggableItem'
 
 const drag = React.createRef();
@@ -12,7 +12,7 @@ const baseProps: DraggableItemProps = {
   isDragging: false,
   disabled: false,
   isSelected: false,
-  handleItemClick: () => {}
+  handleItemClick: () => { }
 
 }
 
@@ -20,9 +20,9 @@ const baseProps: DraggableItemProps = {
 export default {
   title: 'TheWebUiGuy/DraggableItem',
   component: DraggableItem,
-} as ComponentMeta<typeof DraggableItem>;
+};
 
-const Template: ComponentStory<typeof DraggableItem> = (args) => <DraggableItem {...args} />;
+const Template: any = (args: any) => <DraggableItem {...args} />;
 
 export const Primary = Template.bind({});
 // More on args: https://storybook.js.org/docs/react/writing-stories/args

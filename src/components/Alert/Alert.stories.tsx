@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { ComponentStory, ComponentMeta } from '@storybook/react';
+
 import { Alert } from './Alert'
 
 // More on default export: https://storybook.js.org/docs/react/writing-stories/introduction#default-export
@@ -12,9 +12,9 @@ export default {
       control: { type: "select", options: ["primary", "secondary", "success", "error", "warning"], defaultValue: "primary" },
     },
   }
-} as ComponentMeta<typeof Alert>;
+};
 
-const Template: ComponentStory<typeof Alert> = (args) => <Alert {...args} />;
+const Template: any = (args: any) => <Alert {...args} />;
 
 export const Primary = Template.bind({});
 // More on args: https://storybook.js.org/docs/react/writing-stories/args

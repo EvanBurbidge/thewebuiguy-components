@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { ComponentStory, ComponentMeta } from '@storybook/react';
+
 import { ButtonGroup } from './ButtonGroup'
 
 // More on default export: https://storybook.js.org/docs/react/writing-stories/introduction#default-export
@@ -12,9 +12,9 @@ export default {
       control: { type: "select", options: ["primary", "secondary", "success", "error"], defaultValue: "primary" },
     },
   }
-} as ComponentMeta<typeof ButtonGroup>;
+};
 
-const Template: ComponentStory<typeof ButtonGroup> = (args) => <ButtonGroup {...args} />;
+const Template: any = (args: any) => <ButtonGroup {...args} />;
 
 const buttonConfig = [
   {
