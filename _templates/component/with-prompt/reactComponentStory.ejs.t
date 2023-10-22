@@ -11,9 +11,13 @@ export default {
   component: <%= h.changeCase.pascalCase(name) %>,
 };
 
-const Template: any = (args: any) => <<%= h.changeCase.pascalCase(name) %> {...args} />;
-
-export const Primary = Template.bind({});
-// More on args: https://storybook.js.org/docs/react/writing-stories/args
-Primary.args = {
+export default {
+  title: 'TheWebUiGuy/<%= h.changeCase.pascalCase(name) %>',
+  component: Header,
+  // This component will have an automatically generated Autodocs entry: https://storybook.js.org/docs/react/writing-docs/autodocs
+  tags: ['autodocs'],
+};
+export const Primary = {
+  args: {
+  },
 };
