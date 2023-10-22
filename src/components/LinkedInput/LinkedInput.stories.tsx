@@ -11,6 +11,3 @@ export default {
 
 
 export const Primary = {};
-// More on args: https://storybook.js.org/docs/react/writing-stories/args
-Primary.args = {
-};
