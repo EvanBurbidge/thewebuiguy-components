@@ -15,13 +15,12 @@ export default {
   }
 };
 
-const Template: any = (args: any) => <Button {...args} />;
 
-export const Primary = Template.bind({});
-// More on args: https://storybook.js.org/docs/react/writing-stories/args
-Primary.args = {
-  id: "primary-button",
-  onClick: () => { },
-  children: "Primary button",
-  type: 'primary',
+export const Primary = {
+  args: {
+    id: "primary-button",
+    onClick: () => { },
+    children: "Primary button",
+    type: 'primary',
+  }
 };

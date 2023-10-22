@@ -11,23 +11,23 @@ export default {
   component: Table,
 };
 
-const Template: any = (args: any) => <Table
-  tableHeader={
-    <TableRow id="header">
-      <TableHeader title="header-one" />
-      <TableHeader title="header-two" />
-      <TableHeader title="header-three" />
-    </TableRow>
-  }
-  tableBody={
-    <TableRow id="header">
-      <TableCell title="header-one" subtitle="testing subtitle" />
-      <TableCell title="header-two" subtitle="testing subtitle" />
-      <TableCell title="header-three" subtitle="testing subtitle" />
-    </TableRow>
-  }
-/>;
+// const Template: any = (args: any) => <Table
+//   tableHeader={
+//     <TableRow id="header">
+//       <TableHeader title="header-one" />
+//       <TableHeader title="header-two" />
+//       <TableHeader title="header-three" />
+//     </TableRow>
+//   }
+//   tableBody={
+//     <TableRow id="header">
+//       <TableCell title="header-one" subtitle="testing subtitle" />
+//       <TableCell title="header-two" subtitle="testing subtitle" />
+//       <TableCell title="header-three" subtitle="testing subtitle" />
+//     </TableRow>
+//   }
+// />;
 
-export const Primary = Template.bind({});
+export const Primary = {};
 Primary.args = {}
 

@@ -9,11 +9,9 @@ export default {
   component: HomePageSectionTitle,
 };
 
-const Template: any = (args: any) => <HomePageSectionTitle {...args} />;
-
-export const Primary = Template.bind({});
-// More on args: https://storybook.js.org/docs/react/writing-stories/args
-Primary.args = {
-  title: "Home section title",
-  subtitle: "Home section subtitle",
+export const Primary = {
+  args: {
+    title: "Home section title",
+    subtitle: "Home section subtitle",
+  }
 };

@@ -9,9 +9,8 @@ export default {
   component: LinkedInput,
 };
 
-const Template: any = (args: any) => <LinkedInput {...args} />;
 
-export const Primary = Template.bind({});
+export const Primary = {};
 // More on args: https://storybook.js.org/docs/react/writing-stories/args
 Primary.args = {
 };

@@ -9,14 +9,12 @@ export default {
   component: Radio,
 };
 
-const Template: any = (args: any) => <Radio {...args} />;
-
-export const Primary = Template.bind({});
-// More on args: https://storybook.js.org/docs/react/writing-stories/args
-Primary.args = {
-  value: false,
-  id: 'radio-element',
-  onClick: () => { },
-  label: 'This is a label',
-  subtitle: 'this is a subtitle',
+export const Primary = {
+  args: {
+    value: false,
+    id: 'radio-element',
+    onClick: () => { },
+    label: 'This is a label',
+    subtitle: 'this is a subtitle',
+  }
 };

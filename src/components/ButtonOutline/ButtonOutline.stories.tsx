@@ -13,12 +13,11 @@ export default {
   }
 };
 
-const Template: any = (args: any) => <ButtonOutline {...args} />;
+export const Primary = {
+  args: {
+    id: "primary-button",
+    children: "Primary button",
+    type: 'primary',
 
-export const Primary = Template.bind({});
-// More on args: https://storybook.js.org/docs/react/writing-stories/args
-Primary.args = {
-  id: "primary-button",
-  children: "Primary button",
-  type: 'primary',
+  }
 };

@@ -15,10 +15,8 @@ export default {
   component: StatWithChange,
 };
 
-const Template: any = (args: any) => <StatWithChange {...args} />;
-
-export const Primary = Template.bind({});
-// More on args: https://storybook.js.org/docs/react/writing-stories/args
-Primary.args = {
-  stats,
+export const Primary = {
+  args: {
+    stats,
+  }
 };

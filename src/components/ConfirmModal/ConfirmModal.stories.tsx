@@ -14,17 +14,15 @@ export default {
   }
 };
 
-const Template: any = (args: any) => <ConfirmModal {...args} />;
-
-export const Primary = Template.bind({});
-// More on args: https://storybook.js.org/docs/react/writing-stories/args
-Primary.args = {
-  open: true,
-  cancelAction: () => { },
-  confirmAction: () => { },
-  cancelText: "No way",
-  confirmText: "Maybe",
-  Content: "Do you want to do the thing",
-  // type: "primary",
-  title: "do you want the thing"
+export const Primary = {
+  args: {
+    open: true,
+    cancelAction: () => { },
+    confirmAction: () => { },
+    cancelText: "No way",
+    confirmText: "Maybe",
+    Content: "Do you want to do the thing",
+    // type: "primary",
+    title: "do you want the thing"
+  }
 };

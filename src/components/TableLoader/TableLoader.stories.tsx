@@ -9,10 +9,8 @@ export default {
   component: TableLoader,
 };
 
-const Template: any = (args: any) => <TableLoader {...args} />;
-
-export const Primary = Template.bind({});
-// More on args: https://storybook.js.org/docs/react/writing-stories/args
-Primary.args = {
-  columns: ["", "", "", "", ""]
+export const Primary = {
+  args: {
+    columns: ["", "", "", "", ""]
+  }
 };

@@ -9,11 +9,9 @@ export default {
   component: Toggle,
 };
 
-const Template: any = (args: any) => <Toggle {...args} />;
-
-export const Primary = Template.bind({});
-// More on args: https://storybook.js.org/docs/react/writing-stories/args
-Primary.args = {
-  defaultEnabled: false,
-  onChange: () => { }
+export const Primary = {
+  args: {
+    defaultEnabled: false,
+    onChange: () => { }
+  }
 };

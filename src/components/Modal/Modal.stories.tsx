@@ -23,15 +23,14 @@ export default {
   }
 };
 
-const Template: any = (args: any) => <Modal ModalFooter={<ModalFooter confirmAction={bloop} cancelAction={bloop} cancelButtonText="cancel" confirmButtonText='confirm' buttonType={args.buttonType} />} ModalBody={<Body />} ModalHeader={<Title />} open={args.open} onClose={args.onClose} />;
 
-export const Primary = Template.bind({});
-// More on args: https://storybook.js.org/docs/react/writing-stories/args
-Primary.args = {
-  open: false,
-  onClose: bloop,
-  // @ts-ignore
-  buttonType: "primary",
-  // @ts-ignore
-  type: "primary"
+export const Primary = {
+  args: {
+    open: false,
+    onClose: bloop,
+    // @ts-ignore
+    buttonType: "primary",
+    // @ts-ignore
+    type: "primary"
+  }
 };

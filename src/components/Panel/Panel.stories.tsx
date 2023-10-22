@@ -22,15 +22,13 @@ export default {
 };
 
 // @ts-ignore
-const Template: any = (args: any) => <Panel PanelFooter={<ModalFooter confirmAction={bloop} cancelAction={bloop} cancelButtonText="cancel" confirmButtonText='confirm' buttonType={args.buttonType} />} {...args} />;
-
-export const Primary = Template.bind({});
-// More on args: https://storybook.js.org/docs/react/writing-stories/args
-Primary.args = {
-  PanelHeader: <Title />,
-  PanelBody: <Body />,
-  // @ts-ignore
-  buttonType: "primary",
-  open: true,
-  onClose: () => console.log('bloop')
+export const Primary = {
+  args: {
+    PanelHeader: <Title />,
+    PanelBody: <Body />,
+    // @ts-ignore
+    buttonType: "primary",
+    open: true,
+    onClose: () => console.log('bloop')
+  }
 };

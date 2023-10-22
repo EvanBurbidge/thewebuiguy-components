@@ -9,13 +9,11 @@ export default {
   component: Pagination,
 };
 
-const Template: any = (args: any) => <Pagination {...args} />;
-
-export const Primary = Template.bind({});
-// More on args: https://storybook.js.org/docs/react/writing-stories/args
-Primary.args = {
-  totalItems: 50,
-  itemsPerPage: 10,
-  currentPage: 1,
-  onPageChange: (page: number) => console.log(page)
+export const Primary = {
+  args: {
+    totalItems: 50,
+    itemsPerPage: 10,
+    currentPage: 1,
+    onPageChange: (page: number) => console.log(page)
+  }
 };

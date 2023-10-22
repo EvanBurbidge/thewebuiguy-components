@@ -17,22 +17,19 @@ export default {
   }
 };
 
-const Template: any = (args: any) => <Banner {...args} />;
-
-export const Primary = Template.bind({});
-// More on args: https://storybook.js.org/docs/react/writing-stories/args
-Primary.args = {
-  type: "primary",
-  bannerType: "stickyHeader",
-  title: "We have some exciting news",
-  longTitle: "We now have floating banners",
-  closeText: "Dismiss",
-  cta: "Learn about it",
-  closeAction: () => {
-    console.log("noooope")
-  },
-  ctaAction: () => {
-    console.log("noooope")
-  },
-
+export const Primary = {
+  args: {
+    type: "primary",
+    bannerType: "stickyHeader",
+    title: "We have some exciting news",
+    longTitle: "We now have floating banners",
+    closeText: "Dismiss",
+    cta: "Learn about it",
+    closeAction: () => {
+      console.log("noooope")
+    },
+    ctaAction: () => {
+      console.log("noooope")
+    },
+  }
 };

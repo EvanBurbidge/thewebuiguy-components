@@ -15,10 +15,8 @@ export default {
   component: Stats,
 };
 
-const Template: any = (args: any) => <Stats {...args} />;
-
-export const Primary = Template.bind({});
-// More on args: https://storybook.js.org/docs/react/writing-stories/args
-Primary.args = {
-  stats: statsProp
+export const Primary = {
+  args: {
+    stats: statsProp
+  }
 };

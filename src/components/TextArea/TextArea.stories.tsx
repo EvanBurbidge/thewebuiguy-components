@@ -9,11 +9,9 @@ export default {
   component: TextArea,
 };
 
-const Template: any = (args: any) => <TextArea {...args} />;
-
-export const Primary = Template.bind({});
-// More on args: https://storybook.js.org/docs/react/writing-stories/args
-Primary.args = {
-  id: "textarea",
-  onChange: () => { },
+export const Primary = {
+  args: {
+    id: "textarea",
+    onChange: () => { },
+  }
 };

@@ -24,10 +24,9 @@ export default {
   component: ActivityFeed,
 };
 
-const Template: any = (args: any) => <ActivityFeed {...args} />;
 
-export const Primary = Template.bind({});
-// More on args: https://storybook.js.org/docs/react/writing-stories/args
-Primary.args = {
-  activities
+export const Primary = {
+  args: {
+    activities
+  }
 };

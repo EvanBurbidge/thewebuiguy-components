@@ -10,16 +10,15 @@ export default {
   component: InputGroup,
 };
 
-const Template: any = (args: any) => <InputGroup {...args} />;
 
-export const Primary = Template.bind({});
-// More on args: https://storybook.js.org/docs/react/writing-stories/args
-Primary.args = {
-  id: "input-group-id",
-  label: "Input group",
-  subtitle: "Input group subtitle",
-  inputElement: <Input id="input-id" />,
-  required: false,
-  hasError: false,
-  errorMessage: "some error"
+export const Primary = {
+  args: {
+    id: "input-group-id",
+    label: "Input group",
+    subtitle: "Input group subtitle",
+    inputElement: <Input id="input-id" />,
+    required: false,
+    hasError: false,
+    errorMessage: "some error"
+  }
 };

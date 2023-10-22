@@ -9,14 +9,12 @@ export default {
   component: Checkbox,
 };
 
-const Template: any = (args: any) => <Checkbox {...args} />;
-
-export const Primary = Template.bind({});
-// More on args: https://storybook.js.org/docs/react/writing-stories/args
-Primary.args = {
-  value: false,
-  id: 'checkbox',
-  onClick: () => { },
-  label: 'This is a label',
-  subtitle: 'this is a subtitle',
+export const Primary = {
+  args: {
+    value: false,
+    id: 'checkbox',
+    onClick: () => { },
+    label: 'This is a label',
+    subtitle: 'this is a subtitle',
+  }
 };

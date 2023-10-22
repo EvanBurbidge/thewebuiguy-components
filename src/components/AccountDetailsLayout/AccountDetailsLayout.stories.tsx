@@ -7,11 +7,9 @@ export default {
   component: AccountDetailsLayout,
 };
 
-const Template: any = (args: any) => <AccountDetailsLayout {...args}> test with child </AccountDetailsLayout>;
-
-export const Primary = Template.bind({});
-// More on args: https://storybook.js.org/docs/react/writing-stories/args
-Primary.args = {
-  title: "Some title",
-  subtitle: "Some subtitle",
+export const Primary = {
+  args: {
+    title: "Some title",
+    subtitle: "Some subtitle",
+  }
 };

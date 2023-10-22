@@ -9,11 +9,10 @@ export default {
   component: Input,
 };
 
-const Template: any = (args: any) => <Input {...args} />;
-
-export const Primary = Template.bind({});
 // More on args: https://storybook.js.org/docs/react/writing-stories/args
-Primary.args = {
-  id: "input",
-  onChange: () => { }
+export const Primary = {
+  args: {
+    id: "input",
+    onChange: () => { }
+  }
 };

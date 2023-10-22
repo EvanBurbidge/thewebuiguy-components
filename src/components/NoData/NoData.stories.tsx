@@ -9,13 +9,11 @@ export default {
   component: NoData,
 };
 
-const Template: any = (args: any) => <NoData {...args} />;
-
-export const Primary = Template.bind({});
-// More on args: https://storybook.js.org/docs/react/writing-stories/args
-Primary.args = {
-  title: "oh no",
-  subtitle: "seems theres n odata",
-  cta: "Get started",
-  handleCtaClick: () => { }
+export const Primary = {
+  args: {
+    title: "oh no",
+    subtitle: "seems theres n odata",
+    cta: "Get started",
+    handleCtaClick: () => { }
+  }
 };

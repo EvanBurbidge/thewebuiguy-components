@@ -9,10 +9,8 @@ export default {
   component: SectionTitle,
 };
 
-const Template: any = (args: any) => <SectionTitle {...args} />;
-
-export const Primary = Template.bind({});
-// More on args: https://storybook.js.org/docs/react/writing-stories/args
-Primary.args = {
-  title: "test title"
+export const Primary = {
+  args: {
+    title: "test title"
+  }
 };

@@ -9,14 +9,12 @@ export default {
   component: EmptyState,
 };
 
-const Template: any = (args: any) => <EmptyState {...args} />;
-
-export const Primary = Template.bind({});
-// More on args: https://storybook.js.org/docs/react/writing-stories/args
-Primary.args = {
-  title: "No Projects",
-  subtitle: "Let's import some projects to get started",
-  cta: "Import",
-  ctaCallback: () => { },
-  hideCta: false,
+export const Primary = {
+  args: {
+    title: "No Projects",
+    subtitle: "Let's import some projects to get started",
+    cta: "Import",
+    ctaCallback: () => { },
+    hideCta: false,
+  }
 };

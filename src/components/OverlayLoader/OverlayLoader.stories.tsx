@@ -9,10 +9,8 @@ export default {
   component: OverlayLoader,
 };
 
-const Template: any = (args: any) => <OverlayLoader {...args} />;
-
-export const Primary = Template.bind({});
-// More on args: https://storybook.js.org/docs/react/writing-stories/args
-Primary.args = {
-  setOpen: () => { }
+export const Primary = {
+  args: {
+    setOpen: () => { }
+  }
 };

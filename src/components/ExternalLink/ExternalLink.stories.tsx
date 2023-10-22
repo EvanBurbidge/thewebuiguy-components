@@ -9,12 +9,12 @@ export default {
   component: ExternalLink,
 };
 
-const Template: any = (args: any) => <ExternalLink {...args}>Link</ExternalLink>;
 
-export const Primary = Template.bind({});
 // More on args: https://storybook.js.org/docs/react/writing-stories/args
-Primary.args = {
-  id: "link",
-  href: "https://thewebuiguy.com"
+export const Primary = {
+  args: {
+    id: "link",
+    href: "https://thewebuiguy.com"
+  }
 };
 
