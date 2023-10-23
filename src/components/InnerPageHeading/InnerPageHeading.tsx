@@ -1,10 +1,5 @@
 import React, { ReactElement, Fragment } from 'react';
 /* This example requires Tailwind CSS v2.0+ */
-
-import {
-  ChevronDownIcon,
-} from '@heroicons/react/solid'
-import { Menu, Transition } from '@headlessui/react'
 import { Breadcrumb, Breadcrumbs, HeadingMetaData, MetaDataItem } from '..';
 
 function classNames(...classes: string[]): string {

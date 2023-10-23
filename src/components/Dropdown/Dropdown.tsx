@@ -1,7 +1,7 @@
 import React from 'react';
 import { Fragment } from 'react'
 import { Menu, Transition } from '@headlessui/react'
-import { ChevronDownIcon } from '@heroicons/react/solid'
+import { ChevronDownIcon } from '@heroicons/react/24/solid'
 
 
 function classNames(...classes: string[]): string {

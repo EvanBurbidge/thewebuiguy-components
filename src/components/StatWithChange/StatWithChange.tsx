@@ -1,6 +1,6 @@
 import React from 'react';
 import classNames from 'classnames';
-import { ArrowSmDownIcon, ArrowSmUpIcon } from '@heroicons/react/solid'
+import { ArrowDownIcon, ArrowUpIcon } from '@heroicons/react/24/solid'
 
 export interface StatWithChangeItem {
   name: string;
@@ -35,12 +35,12 @@ export const StatWithChange: React.FC<StatWithChangeProps> = ({ stats }: StatWit
                 )}
               >
                 {item.changeType === 'increase' ? (
-                  <ArrowSmUpIcon
+                  <ArrowUpIcon
                     className="-ml-1 mr-0.5 flex-shrink-0 self-center h-5 w-5 text-success"
                     aria-hidden="true"
                   />
                 ) : (
-                  <ArrowSmDownIcon
+                  <ArrowDownIcon
                     className="-ml-1 mr-0.5 flex-shrink-0 self-center h-5 w-5 text-error"
                     aria-hidden="true"
                   />

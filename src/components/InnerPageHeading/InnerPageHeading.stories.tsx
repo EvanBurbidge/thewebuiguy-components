@@ -1,5 +1,5 @@
 import React from 'react';
-import { CalendarIcon, CurrencyEuroIcon } from '@heroicons/react/solid'
+import { CalendarIcon, CurrencyEuroIcon } from '@heroicons/react/24/solid'
 
 import { InnerPageHeading } from './InnerPageHeading'
 import { Button, ButtonOutline } from '..';

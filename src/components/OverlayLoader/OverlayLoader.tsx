@@ -1,5 +1,5 @@
 import React, { Fragment } from 'react';
-import { RefreshIcon } from '@heroicons/react/solid';
+import { ArrowPathIcon } from '@heroicons/react/24/solid';
 import { Dialog, Transition } from '@headlessui/react'
 
 export interface OverlayLoaderProps {
@@ -33,7 +33,7 @@ export const OverlayLoader: React.FC<OverlayLoaderProps> = ({ setOpen = () => { 
             leaveTo="opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95"
           >
             <Dialog.Overlay className="relative px-4 pt-5 pb-4 overflow-hidden text-left transition-all transform bg-transparent ">
-              <RefreshIcon className="w-20 h-20 text-white animate-spin" />
+              <ArrowPathIcon className="w-20 h-20 text-white animate-spin" />
             </Dialog.Overlay>
           </Transition.Child>
         </div>

@@ -1,6 +1,6 @@
 import React from 'react';
 import { useType } from '../hooks/useType';
-import { XIcon } from '@heroicons/react/outline'
+import { XMarkIcon } from '@heroicons/react/24/outline'
 
 import { Button } from '../Button';
 import { BannerProps } from '../Banner/BannerTypes';
@@ -42,7 +42,7 @@ export const BannerBody: React.FC<BannerProps> = ({
         <div className="flex-shrink-0 order-2 sm:order-3 sm:ml-2">
           <Button id="dismiss-button" type={type} onClick={closeAction}>
             <span className="sr-only">{closeText}</span>
-            <XIcon className="w-6 h-6 text-white" aria-hidden="true" />
+            <XMarkIcon className="w-6 h-6 text-white" aria-hidden="true" />
           </Button>
         </div>
       </div>
