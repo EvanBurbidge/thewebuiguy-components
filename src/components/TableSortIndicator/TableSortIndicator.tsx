@@ -1,7 +1,7 @@
 import React from 'react';
 
-import SortDescendingIcon from '@heroicons/react/solid/SortDescendingIcon';
-import SortAscendingIcon from '@heroicons/react/solid/SortAscendingIcon';
+import SortDescendingIcon from '@heroicons/react/24/solid/ChevronDownIcon';
+import SortAscendingIcon from '@heroicons/react/24/solid/ChevronUpIcon';
 
 export interface TableSortIndicatorProps {
   direction: string;
