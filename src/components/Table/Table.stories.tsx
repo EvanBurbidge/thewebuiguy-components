@@ -1,33 +1,21 @@
-import React from 'react';
-
-
+// import React from 'react';
+// import README from './README.md';
+import { Meta, StoryObj } from '@storybook/react';
 import { Table } from './Table'
-import { TableRow } from '../TableRow';
-import { TableCell } from '../TableCell';
-import { TableHeader } from '../TableHeader';
+// import { TableRow } from '../TableRow';
+// import { TableCell } from '../TableCell';
+// import { TableHeader } from '../TableHeader';
 // More on default export: https://storybook.js.org/docs/react/writing-stories/introduction#default-export
-export default {
-  title: 'TheWebUiGuy/Table',
+const meta: Meta<typeof Table> = {
   component: Table,
 };
 
-// const Template: any = (args: any) => <Table
-//   tableHeader={
-//     <TableRow id="header">
-//       <TableHeader title="header-one" />
-//       <TableHeader title="header-two" />
-//       <TableHeader title="header-three" />
-//     </TableRow>
-//   }
-//   tableBody={
-//     <TableRow id="header">
-//       <TableCell title="header-one" subtitle="testing subtitle" />
-//       <TableCell title="header-two" subtitle="testing subtitle" />
-//       <TableCell title="header-three" subtitle="testing subtitle" />
-//     </TableRow>
-//   }
-// />;
+export default meta;
 
-export const Primary = {};
-Primary.args = {}
+type Story = StoryObj<typeof Table>;
+
+
+export const Primary: Story = {
+  args: {},
+};
 

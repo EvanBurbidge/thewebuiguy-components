@@ -1,5 +1,5 @@
 const TsconfigPathsPlugin = require('tsconfig-paths-webpack-plugin');
-
+import remarkGfm from 'remark-gfm';
 
 module.exports = {
   "stories": [
@@ -13,7 +13,16 @@ module.exports = {
     "@storybook/addon-interactions",
     "@storybook/addon-links",
     "@storybook/addon-actions",
-    "@storybook/addon-docs"
+    {
+      name: '@storybook/addon-docs',
+      // options: {
+      //   mdxPluginOptions: {
+      //     mdxCompileOptions: {
+      //       remarkPlugins: [remarkGfm],
+      //     },
+      //   },
+      // },
+    }
   ],
 
   "framework": "@storybook/react-webpack5",
