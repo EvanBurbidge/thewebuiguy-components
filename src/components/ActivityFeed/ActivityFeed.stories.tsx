@@ -1,6 +1,3 @@
-import React from 'react';
-
-
 import { ActivityFeed } from './ActivityFeed'
 /* This example requires Tailwind CSS v2.0+ */
 const people = [
@@ -22,6 +19,7 @@ const activities = [
 export default {
   title: 'TheWebUiGuy/ActivityFeed',
   component: ActivityFeed,
+  tags: ['autodocs'],
 };
 
 

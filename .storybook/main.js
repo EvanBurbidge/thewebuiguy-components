@@ -25,7 +25,10 @@ module.exports = {
     }
   ],
 
-  "framework": "@storybook/react-webpack5",
+  "framework": {
+    name: "@storybook/react-webpack5",
+    options: {}
+  },
 
   webpackFinal: async (config) => {
     config.resolve.plugins = [new TsconfigPathsPlugin()];
